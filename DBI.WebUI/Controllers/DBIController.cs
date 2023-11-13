@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DBI.WebUI.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DBI.WebUI.Controllers
 {
@@ -6,13 +7,26 @@ namespace DBI.WebUI.Controllers
     [Route("api/[controller]")]
     public class DBIController : ControllerBase
     {
-        [HttpGet("test")]
-        
-        public async Task<IActionResult> Test()
+        readonly private ImageService imageService;
+
+        public DBIController(ImageService service)
         {
-            int number = 5;
-            return Ok(number);
+            imageService = service;
         }
-        
+
+        [HttpPost("add")]
+        public async Task<IActionResult> Add([FromBody] int number1)
+        {
+            try
+            {
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return BadRequest("Bad format");
+                throw;
+            }
+
+        }
     }
 }

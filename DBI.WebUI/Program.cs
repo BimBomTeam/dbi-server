@@ -1,3 +1,5 @@
+using DBI.WebUI.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,6 +18,8 @@ builder.Services.AddCors(options =>
         .AllowCredentials()
         .SetIsOriginAllowed((hosts) => true));
 });
+
+builder.Services.AddSingleton<ImageService>();
 
 var app = builder.Build();
 
