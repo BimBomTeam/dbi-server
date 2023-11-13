@@ -6,9 +6,13 @@ namespace DBI.WebUI.Controllers
     [Route("api/[controller]")]
     public class DBIController : ControllerBase
     {
+        [HttpGet("test")]
+        
         public async Task<IActionResult> Test()
         {
-            return Ok();
+            int number = 5;
+            return Ok(number);
         }
+        
     }
 }
