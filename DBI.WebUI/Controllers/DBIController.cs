@@ -7,23 +7,17 @@ namespace DBI.WebUI.Controllers
     [Route("api/[controller]")]
     public class DBIController : ControllerBase
     {
-        readonly private ImageService imageService;
-
-        public DBIController(ImageService service)
-        {
-            imageService = service;
-        }
-
-        [HttpPost("add")]
-        public async Task<IActionResult> Add([FromBody] int number1)
+        [HttpPost("identify")]
+        public async Task<IActionResult> Identify([FromBody] string base64)
         {
             try
             {
-                return Ok();
+                string scaledBase64 = ImageHelper.ScaleImage(base64);               
+                return Ok(scaledBase64);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return BadRequest("Bad format");
+                return BadRequest(ex.Message);
                 throw;
             }
 

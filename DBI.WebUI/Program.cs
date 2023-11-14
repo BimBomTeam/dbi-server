@@ -19,8 +19,6 @@ builder.Services.AddCors(options =>
         .SetIsOriginAllowed((hosts) => true));
 });
 
-builder.Services.AddSingleton<ImageService>();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
