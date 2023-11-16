@@ -7,13 +7,19 @@ namespace DBI.WebUI.Controllers
     [Route("api/[controller]")]
     public class DBIController : ControllerBase
     {
+        private readonly DogBreedIdentificationService service;
+
+        public DBIController(DogBreedIdentificationService service)
+        {
+            this.service = service;
+        }
         [HttpPost("identify")]
         public async Task<IActionResult> Identify([FromBody] string base64)
         {
             try
             {
-                string scaledBase64 = ImageHelper.ScaleImage(base64);               
-                return Ok(scaledBase64);
+                string image = service.Identify(base64);
+                return Ok(image);
             }
             catch (Exception ex)
             {
