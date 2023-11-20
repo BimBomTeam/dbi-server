@@ -1,5 +1,6 @@
 ﻿using DBI.WebUI.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Buffers.Text;
 
 namespace DBI.WebUI.Controllers
 {
@@ -14,12 +15,12 @@ namespace DBI.WebUI.Controllers
             this.service = service;
         }
         [HttpPost("identify")]
-        public async Task<IActionResult> Identify([FromBody] string base64)
+        public async Task<IActionResult> Identify([FromBody] IdentifyDTO dto)
         {
             try
             {
-                string image = service.Identify(base64);
-                return Ok(image);
+                string result = service.Identify(dto.Base64);
+                return Ok(result);
             }
             catch (Exception ex)
             {

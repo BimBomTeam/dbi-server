@@ -8,23 +8,19 @@
         {
             byte[] imageBytes = Convert.FromBase64String(base64Image);
             string base64Check = Convert.ToBase64String(imageBytes);
-            if (base64Check.Equals(base64Image))
-            {
-                using (var inputStream = new MemoryStream(imageBytes))
-                using (var image = Image.Load(inputStream))
-                {
-                    image.Mutate(x => x.Resize(SIZE, SIZE));
-
-                    using (var outputStream = new MemoryStream())
-                    {
-                        image.SaveAsJpeg(outputStream);
-                        return Convert.ToBase64String(outputStream.ToArray());
-                    }
-                }
-            }
-            else
-            {
+            if (!base64Check.Equals(base64Image))
                 throw new ArgumentException("Bad format Base64.");
+
+            using (var inputStream = new MemoryStream(imageBytes))
+            using (var image = Image.Load(inputStream))
+            {
+                image.Mutate(x => x.Resize(SIZE, SIZE));
+
+                using (var outputStream = new MemoryStream())
+                {
+                    image.SaveAsJpeg(outputStream);
+                    return Convert.ToBase64String(outputStream.ToArray());
+                }
             }
         }
         catch (Exception ex)

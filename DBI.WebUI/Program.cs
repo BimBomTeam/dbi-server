@@ -19,6 +19,7 @@ builder.Services.AddCors(options =>
         .SetIsOriginAllowed((hosts) => true));
 });
 builder.Services.AddSingleton<DogBreedIdentificationService>();
+builder.Services.AddSingleton<ModelService>();
 
 var app = builder.Build();
 
