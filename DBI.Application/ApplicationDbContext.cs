@@ -20,6 +20,13 @@ namespace DBI.Application
                 .HasForeignKey<BreedTrainingProps>(x => x.DogBreedId)
                 .IsRequired();
 
+
+            modelBuilder.Entity<BreedTrainingProps>()
+                .HasOne(x => x.DogBreed)
+                .WithOne(x => x.BreedTrainingProps)
+                .HasForeignKey<DogBreed>(x => x.BreedTrainingPropsId)
+                .IsRequired();
+
             modelBuilder.Entity<DogBreed>().HasQueryFilter(e => !e.IsDeleted);
             modelBuilder.Entity<BreedTrainingProps>().HasQueryFilter(e => !e.IsDeleted);
         }
