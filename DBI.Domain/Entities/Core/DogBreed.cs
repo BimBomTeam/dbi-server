@@ -8,7 +8,7 @@ namespace DBI.Domain.Entities.Core
         public string ShowName { get; set; }
         public string ShortDescription { get; set; }
 
-        public int BreedTrainingPropsId { get; set; }
+        public int? BreedTrainingPropsId { get; set; }
         public virtual BreedTrainingProps? BreedTrainingProps { get; set; }
     }
 }

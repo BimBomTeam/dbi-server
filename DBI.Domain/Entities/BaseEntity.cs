@@ -11,6 +11,6 @@ namespace DBI.Domain.Entities
     {
         [Key]
         public T Id { get; set; }
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; set; } = false;
     }
 }

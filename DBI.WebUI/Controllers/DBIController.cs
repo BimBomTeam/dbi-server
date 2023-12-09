@@ -27,7 +27,6 @@ namespace DBI.WebUI.Controllers
                 return BadRequest(ex.Message);
                 throw;
             }
-
         }
     }
 }
