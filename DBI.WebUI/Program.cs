@@ -1,4 +1,12 @@
-using DBI.WebUI.Services;
+using DBI.Application;
+using DBI.Application.Commands;
+using DBI.Application.MapperProfiles;
+using DBI.Application.Queries;
+using DBI.Application.Services;
+using DBI.Infrastructure.Commands;
+using DBI.Infrastructure.Queries;
+using DBI.Infrastructure.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,8 +26,24 @@ builder.Services.AddCors(options =>
         .AllowCredentials()
         .SetIsOriginAllowed((hosts) => true));
 });
-builder.Services.AddSingleton<DogBreedIdentificationService>();
-builder.Services.AddSingleton<ModelService>();
+
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseNpgsql(
+                    builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//builder.Services.AddAutoMapper(typeof(Program).Assembly, typeof(MapperProfile).Assembly);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddTransient<IBreedIdentificationService, BreedIdentificationService>();
+builder.Services.AddTransient<IDogBreedService, DogBreedService>();
+builder.Services.AddTransient<IHistoryService, HistoryService>();
+
+builder.Services.AddTransient<IDogBreedQuery, DogBreedQuery>();
+builder.Services.AddTransient<IHistoryQuery, HistoryQuery>();
+
+builder.Services.AddTransient<IDogBreedCommand, DogBreedCommand>();
+builder.Services.AddTransient<IHistoryCommand, HistoryCommand>();
 
 var app = builder.Build();
 
