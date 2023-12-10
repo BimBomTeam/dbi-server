@@ -8,6 +8,7 @@ using DBI.Infrastructure.Queries;
 using DBI.Infrastructure.Services;
 using DBI.WebUI.Services;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +44,12 @@ builder.Services.AddTransient<IDogBreedService, DogBreedService>();
 builder.Services.AddTransient<IDogBreedQuery, DogBreedQuery>();
 
 builder.Services.AddTransient<IDogBreedCommand, DogBreedCommand>();
+
+builder.Services.AddHttpsRedirection(options =>
+{
+    options.RedirectStatusCode = (int)HttpStatusCode.TemporaryRedirect;
+    options.HttpsPort = 7219;
+});
 
 var app = builder.Build();
 

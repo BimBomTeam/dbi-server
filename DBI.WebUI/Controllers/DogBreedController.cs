@@ -54,12 +54,12 @@ namespace DBI.WebUI.Controllers
                 return BadRequest();
             }
         }
-        [HttpPut("edit-breed")]
-        public async Task<IActionResult> EditBreed([FromBody] DogBreedDto dogBreed)
+        [HttpPut("update")]
+        public async Task<IActionResult> UpdateBreedAsync([FromBody] DogBreedDto dogBreed)
         {
             try
             {
-                dogBreedService.EditBreed(dogBreed);
+                dogBreedService.UpdateBreed(dogBreed);
                 return Ok();
             }
             catch (Exception)

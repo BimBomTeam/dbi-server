@@ -40,7 +40,7 @@ namespace DBI.Application.Services
             dogBreedCommand.Delete(id);
             await dogBreedCommand.SaveChangesAsync();
         }
-        public async void EditBreed(DogBreedDto dogDto)
+        public async void UpdateBreed(DogBreedDto dogDto)
         {
             var dogBreed = mapper.Map<DogBreed>(dogDto);
             dogBreedCommand.Update(dogBreed);

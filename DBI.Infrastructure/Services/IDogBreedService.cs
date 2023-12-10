@@ -8,6 +8,6 @@ namespace DBI.Infrastructure.Services
         List<DogBreedDto> GetAllBreeds();
         Task<DogBreedDto> AddBreed(DogBreedDto dogDto);
         void DeleteBreed(int id);
-        void EditBreed(DogBreedDto dogDto);
+        void UpdateBreed(DogBreedDto dogDto);
     }
 }
