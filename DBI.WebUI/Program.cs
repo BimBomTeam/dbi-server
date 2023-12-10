@@ -44,6 +44,13 @@ builder.Services.AddTransient<IDogBreedQuery, DogBreedQuery>();
 
 builder.Services.AddTransient<IDogBreedCommand, DogBreedCommand>();
 
+
+builder.Services.AddTransient<IHistoryService, HistoryService>();
+
+builder.Services.AddTransient<IHistoryQuery, HistoryQuery>();
+
+builder.Services.AddTransient<IHistoryCommand, HistoryCommand>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

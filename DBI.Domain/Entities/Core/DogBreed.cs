@@ -10,5 +10,6 @@ namespace DBI.Domain.Entities.Core
 
         public int? BreedTrainingPropsId { get; set; }
         public virtual BreedTrainingProps? BreedTrainingProps { get; set; }
+        public virtual ICollection<SearchHistoryEntity> SearchHistories { get; set; } = new List<SearchHistoryEntity>();
     }
 }

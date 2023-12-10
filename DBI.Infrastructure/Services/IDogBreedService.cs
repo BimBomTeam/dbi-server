@@ -1,5 +1,4 @@
-﻿using DBI.Domain.Entities.Core;
-using DBI.Infrastructure.Dto;
+﻿using DBI.Infrastructure.Dto;
 
 namespace DBI.Infrastructure.Services
 {
