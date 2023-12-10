@@ -6,7 +6,6 @@ using DBI.Application.Services;
 using DBI.Infrastructure.Commands;
 using DBI.Infrastructure.Queries;
 using DBI.Infrastructure.Services;
-using DBI.WebUI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,9 +35,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //builder.Services.AddAutoMapper(typeof(Program).Assembly, typeof(MapperProfile).Assembly);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddSingleton<DogBreedIdentificationService>();
-builder.Services.AddSingleton<ModelService>();
-
+builder.Services.AddTransient<IBreedIdentificationService, BreedIdentificationService>();
 builder.Services.AddTransient<IDogBreedService, DogBreedService>();
 builder.Services.AddTransient<IHistoryService, HistoryService>();
 

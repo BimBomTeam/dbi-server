@@ -1,4 +1,4 @@
-﻿using DBI.WebUI.Services;
+﻿using DBI.Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Buffers.Text;
 
@@ -8,9 +8,9 @@ namespace DBI.WebUI.Controllers
     [Route("api/[controller]")]
     public class DBIController : ControllerBase
     {
-        private readonly DogBreedIdentificationService service;
+        private readonly IBreedIdentificationService service;
 
-        public DBIController(DogBreedIdentificationService service)
+        public DBIController(IBreedIdentificationService service)
         {
             this.service = service;
         }
@@ -19,7 +19,7 @@ namespace DBI.WebUI.Controllers
         {
             try
             {
-                string result = service.Identify(dto.Base64);
+                var result = await service.IdentifyAsync(dto.Base64);
                 return Ok(result);
             }
             catch (Exception ex)
