@@ -7,9 +7,9 @@
         try
         {
             byte[] imageBytes = Convert.FromBase64String(base64Image);
-            string base64Check = Convert.ToBase64String(imageBytes);
-            if (!base64Check.Equals(base64Image))
-                throw new ArgumentException("Bad format Base64.");
+            //string base64Check = Convert.ToBase64String(imageBytes);
+            //if (!base64Check.Equals(base64Image))
+            //    throw new ArgumentException("Bad format Base64.");
 
             using (var inputStream = new MemoryStream(imageBytes))
             using (var image = Image.Load(inputStream))

@@ -38,17 +38,14 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddSingleton<DogBreedIdentificationService>();
 builder.Services.AddSingleton<ModelService>();
+
 builder.Services.AddTransient<IDogBreedService, DogBreedService>();
-
-builder.Services.AddTransient<IDogBreedQuery, DogBreedQuery>();
-
-builder.Services.AddTransient<IDogBreedCommand, DogBreedCommand>();
-
-
 builder.Services.AddTransient<IHistoryService, HistoryService>();
 
+builder.Services.AddTransient<IDogBreedQuery, DogBreedQuery>();
 builder.Services.AddTransient<IHistoryQuery, HistoryQuery>();
 
+builder.Services.AddTransient<IDogBreedCommand, DogBreedCommand>();
 builder.Services.AddTransient<IHistoryCommand, HistoryCommand>();
 
 var app = builder.Build();
