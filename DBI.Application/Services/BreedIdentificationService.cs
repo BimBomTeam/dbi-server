@@ -15,6 +15,8 @@ namespace DBI.Application.Services
         {
             try
             {
+                return new DogBreedDto() { Name = "Hot dog", Description = "Very hot dog. I wanna fuck it." };
+
                 string scaledBase64 = ImageHelper.ScaleImage(base64);
                 var result = await Task.Run(() => modelService.IdentifyAsync(scaledBase64));
 
