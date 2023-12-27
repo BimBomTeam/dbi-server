@@ -5,10 +5,10 @@ namespace DBI.Application.Services
 {
     public class BreedIdentificationService : IBreedIdentificationService
     {
-        private readonly AiModelService modelService;
+        private readonly IAiModelService modelService;
         public BreedIdentificationService()
         {
-            this.modelService = new AiModelService();
+            this.modelService = new TensorflowNetModel();
             //this.modelService = modelService;
         }
         public async Task<DogBreedDto> IdentifyAsync(string base64)

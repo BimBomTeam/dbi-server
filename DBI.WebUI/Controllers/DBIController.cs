@@ -1,6 +1,5 @@
 ﻿using DBI.Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
-using System.Buffers.Text;
 
 namespace DBI.WebUI.Controllers
 {

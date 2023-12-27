@@ -26,7 +26,7 @@ def predict_image(model, base64_string):
 
 def main(base64_string):
     #model = load_model(r'E:\Codes\DogBreedIdentification\Server\DBI.Application\AI\my_model.h5')
-    model = load_model(r'./my_model.h5')
+    model = load_model(r'E:\Codes\DogBreedIdentification\Server\DBI.Application\AI\my_model.h5')
 
     predicted_class_index, prediction = predict_image(model, base64_string['base64_string'])
     

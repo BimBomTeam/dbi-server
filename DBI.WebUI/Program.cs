@@ -27,7 +27,6 @@ builder.Services.AddCors(options =>
         .SetIsOriginAllowed((hosts) => true));
 });
 
-
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(
                     builder.Configuration.GetConnectionString("DefaultConnection")));
