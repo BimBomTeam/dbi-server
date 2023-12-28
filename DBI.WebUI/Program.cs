@@ -24,7 +24,7 @@ builder.Services.AddCors(options =>
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials()
-        .SetIsOriginAllowed((hosts) => true));
+        .SetIsOriginAllowed((hosts) => true)); //-bullseye - slim - arm64v8
 });
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

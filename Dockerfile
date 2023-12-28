@@ -27,12 +27,14 @@ COPY . ./
 RUN dotnet publish "DBI.WebUI/DBI.WebUI.csproj" -c Release -o out
 
 # Build runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
+FROM mcr.microsoft.com/dotnet/sdk:6.0
 WORKDIR /app
+#COPY mysite.crt /etc/ssl/certs/
+#COPY mysite.key /etc/ssl/private/
 COPY --from=build /app/out .
 
 # Expose the port your app runs on.
-EXPOSE 5000
+EXPOSE 5252
 
 # Run the application.
 ENTRYPOINT ["dotnet", "DBI.WebUI.dll"]
