@@ -8,7 +8,7 @@ namespace DBI.Application.Services
         private readonly IAiModelService modelService;
         public BreedIdentificationService()
         {
-            this.modelService = new TensorflowNetModel();
+            this.modelService = new MlNetModel();
             //this.modelService = modelService;
         }
         public async Task<DogBreedDto> IdentifyAsync(string base64)
