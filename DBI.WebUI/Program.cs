@@ -3,6 +3,8 @@ using DBI.Application.Commands;
 using DBI.Application.MapperProfiles;
 using DBI.Application.Queries;
 using DBI.Application.Services;
+using DBI.Application.Services.MlNet;
+using DBI.Domain.Helpers;
 using DBI.Infrastructure.Commands;
 using DBI.Infrastructure.Queries;
 using DBI.Infrastructure.Services;
@@ -59,5 +61,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.Seed();
 
 app.Run();

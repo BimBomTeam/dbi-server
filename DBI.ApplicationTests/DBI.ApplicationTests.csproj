@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DBI.Application\DBI.Application.csproj" />
+    <ProjectReference Include="..\DBI.Domain\DBI.Domain.csproj" />
   </ItemGroup>
 
 </Project>

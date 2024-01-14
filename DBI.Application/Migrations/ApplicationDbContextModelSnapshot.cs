@@ -39,10 +39,6 @@ namespace DBI.Application.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
-                    b.Property<string>("NameInTrainingDataset")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.HasKey("Id");
 
                     b.ToTable("BreedTrainingProps");

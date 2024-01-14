@@ -1,35 +1,34 @@
-﻿using DBI.Infrastructure.Dto;
+﻿using DBI.Application.Services.MlNet;
+using DBI.Infrastructure.Dto;
+using DBI.Infrastructure.Queries;
 using DBI.Infrastructure.Services;
+using Tensorflow;
 
 namespace DBI.Application.Services
 {
     public class BreedIdentificationService : IBreedIdentificationService
     {
         private readonly IAiModelService modelService;
-        public BreedIdentificationService()
+        private readonly IDogBreedQuery dogBreedQuery;
+        public BreedIdentificationService(IDogBreedQuery dogBreedQuery)
         {
-            this.modelService = new TensorflowNetModel();
-            //this.modelService = modelService;
+            this.modelService = new MlNetService();
+            this.dogBreedQuery = dogBreedQuery;
         }
         public async Task<DogBreedDto> IdentifyAsync(string base64)
         {
             try
             {
-                return new DogBreedDto() { Name = "Hot dog", Description = "Very hot dog. I wanna fuck it." };
+                //base64 = ImageHelper.ScaleImage(base64);
+                var trainingIndex = await Task.Run(() => modelService.IdentifyAsync(base64));
 
-                string scaledBase64 = ImageHelper.ScaleImage(base64);
-                var result = await Task.Run(() => modelService.IdentifyAsync(scaledBase64));
+                var dbObject = await dogBreedQuery.GetBreedByTrainingIdAsync(trainingIndex);
+                if (dbObject == null)
+                    throw new InvalidArgumentError();
 
-                var dict = new Dictionary<int, string>()
-                {
-                    { 0, "Affenpisscher" },
-                    { 1, "Affgan hound" },
-                    { 2, "Dalmatian" }
-                };
+                var result = new DogBreedDto() { Name = dbObject.ShowName, Description = dbObject.ShortDescription };
 
-                var res = new DogBreedDto() { Name = dict[result], Description = "" };
-
-                return res;
+                return result;
             }
             catch (Exception ex)
             {
