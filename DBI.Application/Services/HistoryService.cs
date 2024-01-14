@@ -29,8 +29,10 @@ namespace DBI.Application.Services
 
         public async Task<HistoryDto> AddSearchHistory(HistoryDto historyEntityDto)
         {
+
             var historyEntity = mapper.Map<SearchHistoryEntity>(historyEntityDto);
             historyEntity.Date = DateTime.Now;
+            historyEntity.UserUid = historyEntityDto.UserUid;
             historyEntityDto = mapper.Map<HistoryDto>(await historyCommand.AddAsync(historyEntity));
             await historyCommand.SaveChangesAsync();
 
