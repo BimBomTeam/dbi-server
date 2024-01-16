@@ -50,6 +50,8 @@ namespace DBI.Domain.Helpers
         {
             string filePath = @"E:\Codes\DogBreedIdentification\Server\DBI.WebUI\SeedHelpers\result.json";
 
+            string modelPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "SeedHelpers", "result.json");
+
             string json = File.ReadAllText(filePath);
             IEnumerable<SeedDogBreedEntity> breeds = JsonConvert.DeserializeObject<IEnumerable<SeedDogBreedEntity>>(json);
 
