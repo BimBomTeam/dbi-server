@@ -20,6 +20,10 @@ namespace DBI.Application.Services.MlNet
         {
             predictionEngine = CreatePredictionEngine();
         }
+        ~MlNetService()
+        { 
+            predictionEngine.Dispose();
+        }
 
         private PredictionEngine<InputData, OutputData> CreatePredictionEngine()
         {

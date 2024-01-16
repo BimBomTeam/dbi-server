@@ -36,6 +36,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //builder.Services.AddAutoMapper(typeof(Program).Assembly, typeof(MapperProfile).Assembly);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+builder.Services.AddSingleton<IAiModelService, MlNetService>();
 builder.Services.AddTransient<IBreedIdentificationService, BreedIdentificationService>();
 builder.Services.AddTransient<IDogBreedService, DogBreedService>();
 builder.Services.AddTransient<IHistoryService, HistoryService>();

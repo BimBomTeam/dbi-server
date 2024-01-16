@@ -10,16 +10,16 @@ namespace DBI.Application.Services
     {
         private readonly IAiModelService modelService;
         private readonly IDogBreedQuery dogBreedQuery;
-        public BreedIdentificationService(IDogBreedQuery dogBreedQuery)
+        public BreedIdentificationService(IDogBreedQuery dogBreedQuery, IAiModelService modelService)
         {
-            this.modelService = new MlNetService();
+            this.modelService = modelService;
             this.dogBreedQuery = dogBreedQuery;
         }
         public async Task<DogBreedDto> IdentifyAsync(string base64)
         {
             try
             {
-                //base64 = ImageHelper.ScaleImage(base64);
+                //base64 = ImageHelper.ScaleImage(base64); //uncomment if require
                 var trainingIndex = await Task.Run(() => modelService.IdentifyAsync(base64));
 
                 var dbObject = await dogBreedQuery.GetBreedByTrainingIdAsync(trainingIndex);
