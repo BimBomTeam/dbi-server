@@ -11,7 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBI.Domain", "DBI.Domain\DB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBI.Infrastructure", "DBI.Infrastructure\DBI.Infrastructure.csproj", "{A4ED9DC7-CCF7-4CC4-9AA0-DEBB8634BCDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBI.ApplicationTests", "DBI.ApplicationTests\DBI.ApplicationTests.csproj", "{B67BBEF6-27B3-45F6-9480-EBCB8C1C4FA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBI.ApplicationTests", "DBI.ApplicationTests\DBI.ApplicationTests.csproj", "{B67BBEF6-27B3-45F6-9480-EBCB8C1C4FA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4677FD9-89B2-4477-99CB-A57157EAB074}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,6 +4,7 @@
     {
         public DateTime Date { get; set; }
         public int DogBreedId { get; set; }
+        public string UserUid { get; set; }
         public virtual DogBreed DogBreed { get; set; }
     }
 }
