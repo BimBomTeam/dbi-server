@@ -32,7 +32,7 @@ namespace DBI.Application.Services
 
             var historyEntity = mapper.Map<SearchHistoryEntity>(historyEntityDto);
             historyEntity.Date = DateTime.Now;
-            historyEntity.UserUid = historyEntityDto.UserUid;
+            historyEntity.UserId = historyEntityDto.UserId;
             historyEntityDto = mapper.Map<HistoryDto>(await historyCommand.AddAsync(historyEntity));
             await historyCommand.SaveChangesAsync();
 

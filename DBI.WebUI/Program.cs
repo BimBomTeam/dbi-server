@@ -40,12 +40,15 @@ builder.Services.AddSingleton<IAiModelService, MlNetService>();
 builder.Services.AddTransient<IBreedIdentificationService, BreedIdentificationService>();
 builder.Services.AddTransient<IDogBreedService, DogBreedService>();
 builder.Services.AddTransient<IHistoryService, HistoryService>();
+builder.Services.AddTransient<IAuthService, AuthService>();
 
 builder.Services.AddTransient<IDogBreedQuery, DogBreedQuery>();
 builder.Services.AddTransient<IHistoryQuery, HistoryQuery>();
+builder.Services.AddTransient<IAuthQuery, AuthQuery>();
 
 builder.Services.AddTransient<IDogBreedCommand, DogBreedCommand>();
 builder.Services.AddTransient<IHistoryCommand, HistoryCommand>();
+builder.Services.AddTransient<IAuthCommand, AuthCommand>();
 
 var app = builder.Build();
 

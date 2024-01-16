@@ -5,8 +5,7 @@ using System.Security.Claims;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
-
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace DBI.WebUI.Controllers
 {
@@ -22,16 +21,17 @@ namespace DBI.WebUI.Controllers
         }
 
         [HttpGet("get-all")]
-        public async Task<ActionResult> GetSearchHistory()
+        [Authorize]
+        public async Task<ActionResult> GetSearchHistory([FromHeader(Name = "Authorization")] string authToken)
         {
             try
             {
                 var result = historyService.GetSearchHistory();
                 return Ok(result);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(500, "Internal Server Error");
+                return BadRequest(ex.Message);
             }
         }
 
@@ -40,7 +40,7 @@ namespace DBI.WebUI.Controllers
         {
             try
             {
-                string userUid = DecodeAuthToken(authToken);
+                string userUid = AuthService.DecodeAuthToken(authToken);
                 var result = historyService.AddSearchHistory(historyEntityDto);
                 return Ok(result);
             }
@@ -48,43 +48,6 @@ namespace DBI.WebUI.Controllers
             {
                 return StatusCode(500, "Internal Server Error");
             }
-        }
-        private string DecodeAuthToken(string authToken)
-        {
-            var key = Encoding.ASCII.GetBytes("nC4HGoTRMvgUAU52eHmhEMaQdpmpEwCj0wp6NdGbfqk");
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var validationParameters = new TokenValidationParameters
-            {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(key),
-                ValidateIssuer = false,
-                ValidateAudience = false
-            };
-
-            try
-            {
-                
-                var claimsPrincipal = tokenHandler.ValidateToken(authToken, validationParameters, out var validatedToken);
-
-                
-                if (validatedToken is JwtSecurityToken jwtSecurityToken && jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
-                {
-                    var uidClaim = claimsPrincipal.FindFirst(ClaimTypes.NameIdentifier);
-                    if (uidClaim != null)
-                    {
-                        return uidClaim.Value;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                
-                Console.WriteLine($"Błąd walidacji tokenu: {ex.Message}");
-            }
-
-            
-            return null;
         }
 
         [HttpDelete("delete/{id}")]
