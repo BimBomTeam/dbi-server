@@ -10,7 +10,9 @@ namespace DBI.Application
 
         public DbSet<DogBreed> DogBreeds { get; set; }
         public DbSet<BreedTrainingProps> BreedTrainingProps { get; set; }
-        public DbSet<SearchHistoryEntity> HistoryEntities { get; set; } 
+        public DbSet<SearchHistoryEntity> HistoryEntities { get; set; }
+        public DbSet<ApplicationUserEntity> Users { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,6 +37,9 @@ namespace DBI.Application
             modelBuilder.Entity<DogBreed>().HasQueryFilter(e => !e.IsDeleted);
             modelBuilder.Entity<BreedTrainingProps>().HasQueryFilter(e => !e.IsDeleted);
             modelBuilder.Entity<SearchHistoryEntity>().HasQueryFilter(e => !e.IsDeleted);
+
+            modelBuilder.Entity<ApplicationUserEntity>()
+                .HasKey(u => u.Id);
         }
     }
 }
