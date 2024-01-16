@@ -3,6 +3,8 @@ using DBI.Application.Commands;
 using DBI.Application.MapperProfiles;
 using DBI.Application.Queries;
 using DBI.Application.Services;
+using DBI.Application.Services.MlNet;
+using DBI.Domain.Helpers;
 using DBI.Infrastructure.Commands;
 using DBI.Infrastructure.Queries;
 using DBI.Infrastructure.Services;
@@ -24,17 +26,17 @@ builder.Services.AddCors(options =>
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials()
-        .SetIsOriginAllowed((hosts) => true));
+        .SetIsOriginAllowed((hosts) => true)); //-bullseye - slim - arm64v8
 });
-
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(
-                    builder.Configuration.GetConnectionString("DefaultConnection")));
+                    builder.Configuration.GetConnectionString("RemoteConnection")));
 
 //builder.Services.AddAutoMapper(typeof(Program).Assembly, typeof(MapperProfile).Assembly);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+builder.Services.AddSingleton<IAiModelService, MlNetService>();
 builder.Services.AddTransient<IBreedIdentificationService, BreedIdentificationService>();
 builder.Services.AddTransient<IDogBreedService, DogBreedService>();
 builder.Services.AddTransient<IHistoryService, HistoryService>();
@@ -60,5 +62,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+//app.Seed();
 
 app.Run();
