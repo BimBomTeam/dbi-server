@@ -14,10 +14,13 @@ namespace DBI.WebUI.Controllers
     public class HistoryController : ControllerBase
     {
         private readonly IHistoryService historyService;
+        private readonly ILogger<DBIController> _logger;
 
-        public HistoryController(IHistoryService historyService)
+
+        public HistoryController(IHistoryService historyService, ILogger<DBIController> logger)
         {
             this.historyService = historyService;
+            _logger = logger;
         }
 
         [HttpGet("get-all")]
@@ -27,10 +30,12 @@ namespace DBI.WebUI.Controllers
             try
             {
                 var result = historyService.GetSearchHistory();
+                _logger.LogInformation("History loaded " + DateTime.Now);
                 return Ok(result);
             }
             catch (Exception ex)
             {
+                _logger.LogError("Error loading history " + DateTime.Now + ex);
                 return BadRequest(ex.Message);
             }
         }
@@ -42,10 +47,12 @@ namespace DBI.WebUI.Controllers
             {
                 string userUid = AuthService.DecodeAuthToken(authToken);
                 var result = historyService.AddSearchHistory(historyEntityDto);
+                _logger.LogInformation("History record added " + DateTime.Now);
                 return Ok(result);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                _logger.LogError("Error adding history record " + DateTime.Now + e);
                 return StatusCode(500, "Internal Server Error");
             }
         }
@@ -56,10 +63,12 @@ namespace DBI.WebUI.Controllers
             try
             {
                 historyService.DeleteSearchHistory(id);
+                _logger.LogInformation("History record deleted " + DateTime.Now);
                 return Ok();
             }
-            catch (Exception)
+            catch (Exception exc)
             {
+                _logger.LogError("Error deleting history record " + DateTime.Now + exc);
                 return BadRequest();
             }
         }
