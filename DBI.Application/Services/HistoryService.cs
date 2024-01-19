@@ -20,11 +20,12 @@ namespace DBI.Application.Services
             this.historyCommand = historyCommand;
         }
 
-        public List<HistoryDto> GetSearchHistory()
+        public List<HistoryDto> GetSearchHistoryByUser(string userId)
         {
-            var historyEntities = historyQuery.GetAll();
-            var result = historyEntities.Select(x => mapper.Map<HistoryDto>(x)).ToList();
-            return result;
+            var historyEntities = historyQuery.GetHistoryByUser(userId);
+            var historyDtos = historyEntities.Select(x => mapper.Map<HistoryDto>(x)).ToList();
+            //var result = historyEntities.Select(x => mapper.Map<HistoryDto>(x)).ToList();
+            return historyDtos;
         }
 
         public async Task<HistoryDto> AddSearchHistory(HistoryDto historyEntityDto)
@@ -33,7 +34,8 @@ namespace DBI.Application.Services
             var historyEntity = mapper.Map<SearchHistoryEntity>(historyEntityDto);
             historyEntity.Date = DateTime.Now;
             historyEntity.UserId = historyEntityDto.UserId;
-            historyEntityDto = mapper.Map<HistoryDto>(await historyCommand.AddAsync(historyEntity));
+            var addedHistory = await historyCommand.AddAsync(historyEntity);
+            historyEntityDto = mapper.Map<HistoryDto>(addedHistory);
             await historyCommand.SaveChangesAsync();
 
             return historyEntityDto;

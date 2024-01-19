@@ -26,7 +26,8 @@ namespace DBI.WebUI.Controllers
         {
             try
             {
-                var result = historyService.GetSearchHistory();
+                var userId = AuthService.DecodeAuthToken(authToken);
+                var result = historyService.GetSearchHistoryByUser(userId);
                 return Ok(result);
             }
             catch (Exception ex)
