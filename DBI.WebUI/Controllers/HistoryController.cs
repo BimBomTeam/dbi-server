@@ -6,6 +6,8 @@ using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authorization;
+using FirebaseAdmin.Auth;
+using DBI.Application.Services.Authorization;
 
 namespace DBI.WebUI.Controllers
 {
@@ -23,15 +25,23 @@ namespace DBI.WebUI.Controllers
             _logger = logger;
         }
 
-        [HttpGet("get-all")]
         [Authorize]
-        public async Task<ActionResult> GetSearchHistory([FromHeader(Name = "Authorization")] string authToken)
+        [HttpGet("get-all")]
+        public async Task<ActionResult> GetSearchHistory()
         {
             try
             {
-                var result = historyService.GetSearchHistory();
-                _logger.LogInformation("History loaded " + DateTime.Now);
-                return Ok(result);
+                if (HttpContext.Request.Headers.TryGetValue("Authorization", out var authorizationHeader))
+                {
+                    if (!string.IsNullOrEmpty(authorizationHeader))
+                    {
+                        var userUid = await FirebaseAuthService.GetUserIdByBearerToken(authorizationHeader.ToString());
+                        var result = historyService.GetSearchHistoryByUser(userUid);
+                        _logger.LogInformation("History loaded " + DateTime.Now);
+                        return Ok(result);
+                    }
+                }
+                return BadRequest("User are not authorized");
             }
             catch (Exception ex)
             {

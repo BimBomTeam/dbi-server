@@ -1,5 +1,6 @@
 ﻿using DBI.Infrastructure.Dto;
 using DBI.Infrastructure.Services;
+using DBI.Infrastructure.Services.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DBI.WebUI.Controllers
@@ -9,13 +10,14 @@ namespace DBI.WebUI.Controllers
     public class AuthController : Controller
     {
         private readonly IAuthService authService;
+        private readonly IFirebaseAuthService firebaseAuthService;
         private readonly ILogger<DBIController> _logger;
 
-
-        public AuthController(IAuthService authService, ILogger<DBIController> logger)
+        public AuthController(IAuthService authService, ILogger<DBIController> logger, , IFirebaseAuthService firebaseAuthService)
         {
             this.authService = authService;
-            _logger = logger;
+            this._logger = logger;
+            this.firebaseAuthService = firebaseAuthService;
         }
 
         [HttpGet("get-all")]
@@ -34,16 +36,32 @@ namespace DBI.WebUI.Controllers
             }
         }
 
+        //[HttpPost("register")]
+        //public async Task<IActionResult> RegisterAsync([FromBody] UserRegisterDto dto)
+        //{
+        //    try
+        //    {
+        //        if (string.IsNullOrEmpty(dto.UserUId) || string.IsNullOrEmpty(dto.Identifier))
+        //            return BadRequest("Cant be empty");
+        //        var id = await authService.AddUserAsync(dto);
+
+        //        return Ok(id);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest(ex.Message);
+        //    }
+        //}
         [HttpPost("register")]
-        public async Task<IActionResult> RegisterAsync([FromBody] UserRegisterDto dto)
+        public async Task<IActionResult> RegisterFirebaseAsync([FromBody] UserCredential dto)
         {
             try
             {
                 if (string.IsNullOrEmpty(dto.UserUId) || string.IsNullOrEmpty(dto.Identifier))
                     return BadRequest("Cant be empty");
-                var id = await authService.AddUserAsync(dto);
+                var userId = await firebaseAuthService.SignUpAsync(dto);
                 _logger.LogInformation("User registered " + DateTime.Now);
-                return Ok(id);
+                return Ok(userId);
             }
             catch (Exception ex)
             {
@@ -51,6 +69,19 @@ namespace DBI.WebUI.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpPost("login")]
+        public async Task<IActionResult> LoginFirebaseAsync([FromBody] UserCredential dto)
+        {
+            try
+            {
+                var userId = await firebaseAuthService.LoginAsync(dto);
 
+                return Ok(userId);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }
