@@ -11,21 +11,27 @@ namespace DBI.WebUI.Controllers
     {
         private readonly IAuthService authService;
         private readonly IFirebaseAuthService firebaseAuthService;
-        public AuthController(IAuthService authService, IFirebaseAuthService firebaseAuthService)
+        private readonly ILogger<DBIController> _logger;
+
+        public AuthController(IAuthService authService, ILogger<DBIController> logger, , IFirebaseAuthService firebaseAuthService)
         {
             this.authService = authService;
+            this._logger = logger;
             this.firebaseAuthService = firebaseAuthService;
         }
+
         [HttpGet("get-all")]
         public async Task<IActionResult> GetAll()
         {
             try
             {
                 var result = authService.GetAllUsers();
+                _logger.LogInformation("All users downloaded " + DateTime.Now);
                 return Ok(result);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                _logger.LogError("Error retrieving all users " + DateTime.Now + e);
                 return BadRequest();
             }
         }
@@ -51,12 +57,15 @@ namespace DBI.WebUI.Controllers
         {
             try
             {
+                if (string.IsNullOrEmpty(dto.UserUId) || string.IsNullOrEmpty(dto.Identifier))
+                    return BadRequest("Cant be empty");
                 var userId = await firebaseAuthService.SignUpAsync(dto);
-
+                _logger.LogInformation("User registered " + DateTime.Now);
                 return Ok(userId);
             }
             catch (Exception ex)
             {
+                _logger.LogError("Error during registration " + DateTime.Now + ex);
                 return BadRequest(ex.Message);
             }
         }
