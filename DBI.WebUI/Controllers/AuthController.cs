@@ -13,7 +13,7 @@ namespace DBI.WebUI.Controllers
         private readonly IFirebaseAuthService firebaseAuthService;
         private readonly ILogger<DBIController> _logger;
 
-        public AuthController(IAuthService authService, ILogger<DBIController> logger, , IFirebaseAuthService firebaseAuthService)
+        public AuthController(IAuthService authService, ILogger<DBIController> logger, IFirebaseAuthService firebaseAuthService)
         {
             this.authService = authService;
             this._logger = logger;
@@ -35,29 +35,12 @@ namespace DBI.WebUI.Controllers
                 return BadRequest();
             }
         }
-
-        //[HttpPost("register")]
-        //public async Task<IActionResult> RegisterAsync([FromBody] UserRegisterDto dto)
-        //{
-        //    try
-        //    {
-        //        if (string.IsNullOrEmpty(dto.UserUId) || string.IsNullOrEmpty(dto.Identifier))
-        //            return BadRequest("Cant be empty");
-        //        var id = await authService.AddUserAsync(dto);
-
-        //        return Ok(id);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return BadRequest(ex.Message);
-        //    }
-        //}
         [HttpPost("register")]
         public async Task<IActionResult> RegisterFirebaseAsync([FromBody] UserCredential dto)
         {
             try
             {
-                if (string.IsNullOrEmpty(dto.UserUId) || string.IsNullOrEmpty(dto.Identifier))
+                if (string.IsNullOrEmpty(dto.Email) || string.IsNullOrEmpty(dto.Password))
                     return BadRequest("Cant be empty");
                 var userId = await firebaseAuthService.SignUpAsync(dto);
                 _logger.LogInformation("User registered " + DateTime.Now);
