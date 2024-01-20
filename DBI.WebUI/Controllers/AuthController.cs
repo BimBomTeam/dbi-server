@@ -42,9 +42,10 @@ namespace DBI.WebUI.Controllers
             {
                 if (string.IsNullOrEmpty(dto.Email) || string.IsNullOrEmpty(dto.Password))
                     return BadRequest("Cant be empty");
-                var userId = await firebaseAuthService.SignUpAsync(dto);
+                string token = await firebaseAuthService.SignUpAsync(dto);
+                TokenDto tokenDto = new TokenDto() { Token = token };
                 _logger.LogInformation("User registered " + DateTime.Now);
-                return Ok(userId);
+                return Ok(tokenDto);
             }
             catch (Exception ex)
             {
@@ -57,9 +58,12 @@ namespace DBI.WebUI.Controllers
         {
             try
             {
-                var userId = await firebaseAuthService.LoginAsync(dto);
+                var token = await firebaseAuthService.LoginAsync(dto);
 
-                return Ok(userId);
+                TokenDto tokenDto = new TokenDto() { Token = token };
+                _logger.LogInformation("User logged " + token);
+
+                return Ok(tokenDto);
             }
             catch (Exception ex)
             {
