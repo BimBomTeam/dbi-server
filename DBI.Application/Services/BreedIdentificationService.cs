@@ -19,14 +19,19 @@ namespace DBI.Application.Services
         {
             try
             {
-                //base64 = ImageHelper.ScaleImage(base64); //uncomment if require
                 var trainingIndex = await Task.Run(() => modelService.IdentifyAsync(base64));
 
                 var dbObject = await dogBreedQuery.GetBreedByTrainingIdAsync(trainingIndex);
                 if (dbObject == null)
                     throw new InvalidArgumentError();
 
-                var result = new DogBreedDto() { Name = dbObject.ShowName, Description = dbObject.ShortDescription };
+                var result = new DogBreedDto() 
+                { 
+                    Name = dbObject.ShowName, 
+                    Description = dbObject.ShortDescription, 
+                    Id = dbObject.Id,
+                    AvatarLink = dbObject.AvatarLink,
+                };
 
                 return result;
             }

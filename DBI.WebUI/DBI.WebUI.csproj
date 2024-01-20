@@ -34,4 +34,10 @@
     <ProjectReference Include="..\DBI.Application\DBI.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Resources\google-services.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

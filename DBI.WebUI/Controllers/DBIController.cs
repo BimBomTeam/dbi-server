@@ -1,4 +1,5 @@
 ﻿using DBI.Application.Services;
+using DBI.Application.Services.Authorization;
 using DBI.Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -18,6 +19,7 @@ namespace DBI.WebUI.Controllers
             this.service = service;
             this.historyService = historyService;
         }
+
         [HttpPost("identify")]
         public async Task<IActionResult> Identify([FromBody] IdentifyDTO dto)
         {
@@ -26,11 +28,14 @@ namespace DBI.WebUI.Controllers
                 var result = await service.IdentifyAsync(dto.Base64);
                 if (HttpContext.Request.Headers.TryGetValue("Authorization", out var authorizationHeader))
                 {
-                    string token = authorizationHeader.ToString().Split(' ').LastOrDefault();
-                    if (token != null)
+                    if (!string.IsNullOrEmpty(authorizationHeader))
                     {
-                        var userId = AuthService.DecodeAuthToken(token);
-                        await historyService.AddSearchHistory(new Infrastructure.Dto.HistoryDto() { UserId = userId, DogBreedId = result.Id });
+                        var userUid = await FirebaseAuthService.GetUserIdByBearerToken(authorizationHeader.ToString());
+                        await historyService.AddSearchHistory(new Infrastructure.Dto.HistoryDto() 
+                        { 
+                            UserId = userUid, 
+                            DogBreedId = result.Id 
+                        });
                     }
                 }
                 return Ok(result);
