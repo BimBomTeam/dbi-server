@@ -1,5 +1,5 @@
 # Use the Microsoft's official .NET Core SDK image.
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0-amd64 AS build
 
 # Set the working directory inside the container.
 WORKDIR /app
