@@ -9,10 +9,12 @@ namespace DBI.Application.MapperProfiles
         public HistoryMapperProfile()
         {
             CreateMap<HistoryDto, SearchHistoryEntity>()
-                .ForMember(dest => dest.DogBreedId, opt => opt.MapFrom(src => src.DogBreedId));
+                .ForMember(dest => dest.DogBreedId, opt => opt.MapFrom(src => src.DogBreedId))
+                .ForMember(dest => dest.Date, opt => opt.MapFrom(src => src.CreatedDate));
 
             CreateMap<SearchHistoryEntity, HistoryDto>()
-                .ForMember(dest => dest.DogBreedId, opt => opt.MapFrom(src => src.DogBreedId));
+                .ForMember(dest => dest.DogBreedId, opt => opt.MapFrom(src => src.DogBreedId))
+                .ForMember(dest => dest.CreatedDate, opt => opt.MapFrom(src => src.Date));
         }
     }
 }
