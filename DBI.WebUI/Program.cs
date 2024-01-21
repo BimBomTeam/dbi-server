@@ -1,4 +1,4 @@
-using DBI.Application;
+﻿using DBI.Application;
 using DBI.Application.Commands;
 using DBI.Application.MapperProfiles;
 using DBI.Application.Queries;
@@ -24,6 +24,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Firebase.Auth.Providers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using DBI.Infrastructure.Services.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -61,7 +62,8 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 //builder.Services.AddSingleton(FirebaseApp.Create());
 
-builder.Services.AddSingleton<IAiModelService, MlNetService>();
+builder.Services.AddTransient<IDogRecognizeMlNetService, DogRecognizeMlNetService>();
+builder.Services.AddTransient<IBreedIdentifyMlNetService, BreedIdentifyMlNetService>();
 builder.Services.AddTransient<IBreedIdentificationService, BreedIdentificationService>();
 builder.Services.AddTransient<IDogBreedService, DogBreedService>();
 builder.Services.AddTransient<IHistoryService, HistoryService>();
