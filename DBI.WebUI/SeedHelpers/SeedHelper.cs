@@ -1,5 +1,6 @@
 ﻿using DBI.Application;
 using DBI.Domain.Entities.Core;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System;
 
@@ -48,11 +49,11 @@ namespace DBI.Domain.Helpers
 
         public static IEnumerable<SeedDogBreedEntity> FetchJson()
         {
-            string filePath = @"E:\Codes\DogBreedIdentification\Server\DBI.WebUI\SeedHelpers\result.json";
+            //string filePath = @"E:\Codes\DogBreedIdentification\Server\DBI.WebUI\SeedHelpers\result.json";
 
-            string modelPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "SeedHelpers", "result.json");
+            string seederJsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "SeedHelpers", "result_links.json");
 
-            string json = File.ReadAllText(filePath);
+            string json = File.ReadAllText(seederJsonPath);
             IEnumerable<SeedDogBreedEntity> breeds = JsonConvert.DeserializeObject<IEnumerable<SeedDogBreedEntity>>(json);
 
             return breeds;
