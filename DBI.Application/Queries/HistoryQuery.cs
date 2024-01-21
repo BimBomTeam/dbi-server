@@ -12,7 +12,7 @@ namespace DBI.Application.Queries
 
         public IEnumerable<SearchHistoryEntity> GetHistoryByUser(string userId)
         {
-            return context.HistoryEntities.Where(x => x.UserId == userId);
+            return context.HistoryEntities.Where(x => x.UserId == userId).Include(x => x.DogBreed).Include(x => x.User);
         }
     }
 }
