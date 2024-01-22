@@ -7,6 +7,7 @@ namespace DBI.Application.Services.MlNet
     public class DogRecognizeMlNetService : IDogRecognizeMlNetService
     {
         private readonly PredictionEngine<InputDataRecognition, OutputDataRecognition> breedRecognizePredictionEngine;
+        private readonly double DOG_ACCEPT_COEFFICIENT = 0.4;
         public DogRecognizeMlNetService()
         {
             breedRecognizePredictionEngine = CreateDogRecognizePredictionEngine();
@@ -50,7 +51,7 @@ namespace DBI.Application.Services.MlNet
 
                     OutputDataRecognition output = breedRecognizePredictionEngine.Predict(new InputDataRecognition() { Image = MLImage.CreateFromStream(contents) });
 
-                    var result = output.Scores[0] > 0.4;
+                    var result = output.Scores[0] > DOG_ACCEPT_COEFFICIENT;
 
                     return result;
                 }

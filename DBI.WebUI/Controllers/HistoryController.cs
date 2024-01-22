@@ -68,11 +68,11 @@ namespace DBI.WebUI.Controllers
         }
 
         [HttpDelete("delete/{id}")]
-        public async Task<IActionResult> DeleteSearchHistory([FromQuery] int id)
+        public async Task<IActionResult> DeleteSearchHistory(int id)
         {
             try
             {
-                historyService.DeleteSearchHistory(id);
+                await historyService.DeleteSearchHistory(id);
                 _logger.LogInformation("History record deleted " + DateTime.Now);
                 return Ok();
             }
