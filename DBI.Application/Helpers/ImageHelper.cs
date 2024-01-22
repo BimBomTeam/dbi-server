@@ -4,7 +4,7 @@ using SixLabors.ImageSharp.Processing;
 
 public static class ImageHelper
 {
-    private const int SIZE = 300;
+    private const int SIZE = 224;
 
     public static string ScaleImage(string base64Image)
     {

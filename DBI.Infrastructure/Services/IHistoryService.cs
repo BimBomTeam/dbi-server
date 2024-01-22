@@ -4,8 +4,8 @@ namespace DBI.Application.Services
 {
     public interface IHistoryService
     {
-        List<HistoryDto> GetSearchHistory();
+        List<HistoryDto> GetSearchHistoryByUser(string userId);
         Task<HistoryDto> AddSearchHistory(HistoryDto historyEntityDto);
-        void DeleteSearchHistory(int id);
+        Task DeleteSearchHistory(int id);
     }
 }

@@ -1,35 +1,49 @@
-﻿using DBI.Infrastructure.Dto;
+﻿using DBI.Application.Services.MlNet;
+using DBI.Infrastructure.Dto;
+using DBI.Infrastructure.Queries;
 using DBI.Infrastructure.Services;
+using DBI.Infrastructure.Services.Model;
+using Tensorflow;
 
 namespace DBI.Application.Services
 {
     public class BreedIdentificationService : IBreedIdentificationService
     {
-        private readonly IAiModelService modelService;
-        public BreedIdentificationService()
+        private readonly IBreedIdentifyMlNetService identificationService;
+        private readonly IDogRecognizeMlNetService recognitionService;
+        private readonly IDogBreedQuery dogBreedQuery;
+        public BreedIdentificationService(IDogBreedQuery dogBreedQuery, IBreedIdentifyMlNetService identificationService, IDogRecognizeMlNetService recognitionService)
         {
-            this.modelService = new TensorflowNetModel();
-            //this.modelService = modelService;
+            this.recognitionService = recognitionService;
+            this.identificationService = identificationService;
+            this.dogBreedQuery = dogBreedQuery;
         }
         public async Task<DogBreedDto> IdentifyAsync(string base64)
         {
             try
             {
-                return new DogBreedDto() { Name = "Hot dog", Description = "Very hot dog. I wanna fuck it." };
+                var isDog = await Task.Run(() => recognitionService.RecogniteDogOnImageAsync(base64));
+                var result = new DogBreedDto() { Id = -1 };
 
-                string scaledBase64 = ImageHelper.ScaleImage(base64);
-                var result = await Task.Run(() => modelService.IdentifyAsync(scaledBase64));
-
-                var dict = new Dictionary<int, string>()
+                if (isDog)
                 {
-                    { 0, "Affenpisscher" },
-                    { 1, "Affgan hound" },
-                    { 2, "Dalmatian" }
-                };
+                    var trainingIndex = await Task.Run(() => identificationService.IdentifyAsync(base64));
 
-                var res = new DogBreedDto() { Name = dict[result], Description = "" };
+                    var dbObject = await dogBreedQuery.GetBreedByTrainingIdAsync(trainingIndex);
+                    if (dbObject == null)
+                        throw new InvalidArgumentError();
 
-                return res;
+                    result = new DogBreedDto()
+                    {
+                        Name = dbObject.ShowName,
+                        Description = dbObject.ShortDescription,
+                        Id = dbObject.Id,
+                        AvatarLink = dbObject.AvatarLink,
+                    };
+
+                }
+
+                return result;
             }
             catch (Exception ex)
             {

@@ -9,10 +9,13 @@ namespace DBI.WebUI.Controllers
     public class DogBreedController : Controller
     {
         private readonly IDogBreedService dogBreedService;
+        private readonly ILogger<DBIController> _logger;
 
-        public DogBreedController(IDogBreedService dogBreedService)
+
+        public DogBreedController(IDogBreedService dogBreedService, ILogger<DBIController> logger)
         {
             this.dogBreedService = dogBreedService;
+            _logger = logger;
         }
         [HttpGet("get-all")]
         public async Task<IActionResult> GetAllBreedsAsync()
@@ -20,10 +23,12 @@ namespace DBI.WebUI.Controllers
             try
             {
                 var result = dogBreedService.GetAllBreeds();
+                _logger.LogInformation("All breeds downloaded " + DateTime.Now);
                 return Ok(result);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                _logger.LogError("Error during downloading all breeds " + DateTime.Now + ex);
                 return BadRequest();
             }
         }
@@ -33,10 +38,12 @@ namespace DBI.WebUI.Controllers
             try
             {
                 var result = await dogBreedService.AddBreed(dogBreed);
+                _logger.LogInformation("Breed added " + DateTime.Now);
                 return Ok(result);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                _logger.LogError("Error during adding breed " + DateTime.Now + ex);
                 return BadRequest();
             }
         }
@@ -46,10 +53,12 @@ namespace DBI.WebUI.Controllers
             try
             {
                 dogBreedService.DeleteBreed(id);
+                _logger.LogInformation("Breed deleted " + DateTime.Now);
                 return Ok();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                _logger.LogError("Error during breed delete " + DateTime.Now + ex);
                 return BadRequest();
             }
         }
@@ -59,10 +68,12 @@ namespace DBI.WebUI.Controllers
             try
             {
                 dogBreedService.EditBreed(dogBreed);
+                _logger.LogInformation("Breed edited " + DateTime.Now);
                 return Ok();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                _logger.LogError("Error during edit breed " + DateTime.Now + ex);
                 return BadRequest();
             }
         }

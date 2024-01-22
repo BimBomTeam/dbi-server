@@ -7,6 +7,8 @@ namespace DBI.Domain.Entities.Core
         [Required]
         public string ShowName { get; set; }
         public string ShortDescription { get; set; }
+        public string AvatarLink { get; set; }
+        public string NormalizedName { get; set; }
 
         public int? BreedTrainingPropsId { get; set; }
         public virtual BreedTrainingProps? BreedTrainingProps { get; set; }

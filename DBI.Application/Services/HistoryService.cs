@@ -20,25 +20,31 @@ namespace DBI.Application.Services
             this.historyCommand = historyCommand;
         }
 
-        public List<HistoryDto> GetSearchHistory()
+        public List<HistoryDto> GetSearchHistoryByUser(string userId)
         {
-            var historyEntities = historyQuery.GetAll();
-            var result = historyEntities.Select(x => mapper.Map<HistoryDto>(x)).ToList();
-            return result;
+            var historyEntities = historyQuery.GetHistoryByUser(userId);
+            var historyDtos = historyEntities.Select(x => mapper.Map<HistoryDto>(x)).ToList();
+            //var result = historyEntities.Select(x => mapper.Map<HistoryDto>(x)).ToList();
+            return historyDtos;
         }
 
         public async Task<HistoryDto> AddSearchHistory(HistoryDto historyEntityDto)
         {
             var historyEntity = mapper.Map<SearchHistoryEntity>(historyEntityDto);
-            historyEntity.Date = DateTime.Now;
-            historyEntityDto = mapper.Map<HistoryDto>(await historyCommand.AddAsync(historyEntity));
+            historyEntity.Date = DateTime.UtcNow;
+            historyEntity.UserId = historyEntityDto.UserId;
+            var addedHistory = await historyCommand.AddAsync(historyEntity);
+            historyEntityDto = mapper.Map<HistoryDto>(addedHistory);
             await historyCommand.SaveChangesAsync();
 
             return historyEntityDto;
         }
 
-        public async void DeleteSearchHistory(int id)
+        public async Task DeleteSearchHistory(int id)
         {
+            if (await historyQuery.GetByIdAsync(id) == null)
+                return;
+
             historyCommand.Delete(id);
             await historyCommand.SaveChangesAsync();
         }

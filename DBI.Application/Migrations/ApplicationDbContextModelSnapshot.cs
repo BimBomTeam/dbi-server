@@ -39,10 +39,6 @@ namespace DBI.Application.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
-                    b.Property<string>("NameInTrainingDataset")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.HasKey("Id");
 
                     b.ToTable("BreedTrainingProps");
@@ -56,11 +52,19 @@ namespace DBI.Application.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("AvatarLink")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<int?>("BreedTrainingPropsId")
                         .HasColumnType("integer");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
+
+                    b.Property<string>("NormalizedName")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("ShortDescription")
                         .IsRequired()
@@ -95,11 +99,41 @@ namespace DBI.Application.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.HasIndex("DogBreedId");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("HistoryEntities");
+                });
+
+            modelBuilder.Entity("DBI.Domain.Entities.Core.User", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Identifier")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("DBI.Domain.Entities.Core.DogBreed", b =>
@@ -119,7 +153,15 @@ namespace DBI.Application.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("DBI.Domain.Entities.Core.User", "User")
+                        .WithMany("Histories")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("DogBreed");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DBI.Domain.Entities.Core.BreedTrainingProps", b =>
@@ -131,6 +173,11 @@ namespace DBI.Application.Migrations
             modelBuilder.Entity("DBI.Domain.Entities.Core.DogBreed", b =>
                 {
                     b.Navigation("SearchHistories");
+                });
+
+            modelBuilder.Entity("DBI.Domain.Entities.Core.User", b =>
+                {
+                    b.Navigation("Histories");
                 });
 #pragma warning restore 612, 618
         }

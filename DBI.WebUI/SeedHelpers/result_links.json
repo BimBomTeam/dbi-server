@@ -1,0 +1,931 @@
+[
+    {
+       "name":"Affenpinscher",
+       "training_index":0,
+       "description":"The Affenpinscher, also known as the 'Monkey Terrier', is a small and brave dog with a shaggy coat. They have an average lifespan of 12-15 years. Affenpinschers are naturally inquisitive and playful, exhibiting great loyalty towards their family. However, they may be cautious around unfamiliar individuals and other dogs. Their compact size makes them perfect companions for city life.",
+       "avatar":"avatars/affenpinscher_dog.png",
+       "normalizedName":"affenpinscher_dog"
+    },
+    {
+       "name":"Afghan hound",
+       "training_index":1,
+       "description":"The Afghan Hound is a stunningly elegant and regal breed known for its luxurious, flowing coat. They have a life expectancy of around 10-12 years. With a dignified and aloof demeanor, Afghan Hounds exude grace and charm. They are independent yet affectionate dogs, often forming strong bonds with their owners. While they are gentle and loyal, they can also be aloof towards strangers. Afghan Hounds require regular grooming and exercise to maintain their majestic appearance and keep them content and healthy.",
+       "avatar":"avatars/afghan_hound.png",
+       "normalizedName":"afghan_hound"
+    },
+    {
+       "name":"Airedale terrier",
+       "training_index":2,
+       "description":"The Airedale Terrier, also known as the 'King of Terriers', is a strong and versatile breed with a lifespan of about 10-12 years. They have a wiry, waterproof coat that requires consistent grooming. Airedales are intelligent, confident, and protective of their families. They excel in agility and obedience training. With proper socialization, they can get along well with other dogs and children. Their size and athleticism make them well-suited for active households and they thrive when given plenty of exercise and mental stimulation.",
+       "avatar":"avatars/airedale_terrier.png",
+       "normalizedName":"airedale_terrier"
+    },
+    {
+       "name":"Akita",
+       "training_index":3,
+       "description":"The Akita is a large and powerful breed known for its majestic appearance and loyalty. These dogs have an average lifespan of 10-15 years. With their dignified and independent nature, Akitas can sometimes be aloof with strangers but are devoted to their families. They require proper socialization and training from an early age. Akitas are renowned for their protective instincts and make excellent guard dogs. They have a thick double coat that requires regular grooming and are best suited for experienced owners who can provide them with the exercise, mental stimulation, and leadership they need.",
+       "avatar":"avatars/akita_dog.png",
+       "normalizedName":"akita_dog"
+    },
+    {
+       "name":"Alaskan malamute",
+       "training_index":4,
+       "description":"The Alaskan malamute is a powerful and rugged sled dog known for its incredible strength and endurance. It has a thick double coat that provides insulation in cold weather. This breed typically lives around 10-12 years. Despite its imposing appearance, the Alaskan malamute has a gentle and friendly nature. It is loyal, affectionate, and loves being a part of the family. However, it can be stubborn at times and may need firm training. The Alaskan malamute requires regular exercise and mental stimulation to keep it happy and balanced. It is not recommended for apartment living.",
+       "avatar":"avatars/alaskan_malamute.png",
+       "normalizedName":"alaskan_malamute"
+    },
+    {
+       "name":"American eskimo dog",
+       "training_index":5,
+       "description":"The American Eskimo Dog, also known as the 'Eskie', is a beautiful and intelligent breed with a double coat of white fur. They have an average lifespan of 12-15 years and are known for their friendly and affectionate character. Eskies are highly trainable and make great family pets. They are alert and protective, making them excellent watchdogs. With their playful nature and elegant appearance, they thrive in active households and are well-suited for both city and suburban living.",
+       "avatar":"avatars/american_eskimo_dog.png",
+       "normalizedName":"american_eskimo_dog"
+    },
+    {
+       "name":"American foxhound",
+       "training_index":6,
+       "description":"The American Foxhound is a breed known for its endurance and speed. With an average lifespan of around 10-12 years, these dogs are known for their friendly and sociable nature. They have a strong sense of smell which makes them excellent scent hounds. American Foxhounds are highly energetic and require ample exercise. They are intelligent and adaptable, making them great companions for active individuals or families. With their friendly and gentle demeanor, they get along well with other dogs and children. Their tall and lean build allows them to excel in various canine sports and activities.",
+       "avatar":"avatars/american_foxhound.png",
+       "normalizedName":"american_foxhound"
+    },
+    {
+       "name":"American staffordshire terrier",
+       "training_index":7,
+       "description":"The American Staffordshire Terrier, often called the Am Staff, is a resilient and devoted breed. With an average lifespan of 12-14 years, this medium-sized dog is known for its muscular build and high energy levels. Characterized by its strong and confident nature, the Am Staff is an affectionate family companion. While it can be protective, it requires proper socialization to feel comfortable around strangers and other animals. With its loyalty and love for its loved ones, the American Staffordshire Terrier can thrive in various living environments.",
+       "avatar":"avatars/american_staffordshire_terrier.png",
+       "normalizedName":"american_staffordshire_terrier"
+    },
+    {
+       "name":"American water spaniel",
+       "training_index":8,
+       "description":"The American Water Spaniel is a versatile and energetic breed that was bred for hunting in the Midwest. They have a dense coat that is waterproof, making them skilled swimmers and retrievers. With an average lifespan of 10-12 years, they are known for their intelligence and loyalty. A true family dog, they are good with children and enjoy being included in all activities. Their natural curiosity and trainability make them an excellent choice for those interested in dog sports such as agility or obedience.",
+       "avatar":"avatars/american_water_spaniel.png",
+       "normalizedName":"american_water_spaniel"
+    },
+    {
+       "name":"Anatolian shepherd dog",
+       "training_index":9,
+       "description":"The Anatolian Shepherd Dog is a large and powerful breed known for its protective nature. It has a strong instinct to guard and protect its family, making it an excellent watchdog. With an average lifespan of 10-13 years, this breed requires early socialization and training to prevent aggressive behavior. Anatolian Shepherds are independent, self-assured, and confident, but can be reserved with strangers. They have a dense coat that requires regular grooming. This breed excels in rural environments where their natural guarding instincts can be utilized.",
+       "avatar":"avatars/anatolian_shepherd_dog.png",
+       "normalizedName":"anatolian_shepherd_dog"
+    },
+    {
+       "name":"Australian cattle dog",
+       "training_index":10,
+       "description":"The Australian Cattle Dog, also known as the 'Blue Heeler' or 'Queensland Heeler,' is a medium-sized breed with a strong and agile body. It has a lifespan of around 12-15 years. Known for its intelligence and work ethic, this breed thrives in active households where it can participate in herding or various forms of exercise. Australian Cattle Dogs are fiercely loyal and protective, making them great companions and watchdogs. They require consistent training and socialization from an early age to ensure a well-balanced temperament.",
+       "avatar":"avatars/australian_terrier.png",
+       "normalizedName":"australian_terrier"
+    },
+    {
+       "name":"Australian shepherd",
+       "training_index":11,
+       "description":"The Australian Shepherd, often referred to as the \"Aussie,\" is a medium-sized breed known for its intelligence, agility, and stamina. With an average lifespan of 12-15 years, the Aussie is a devoted and loyal companion. This versatile breed requires mental and physical stimulation to thrive. With a strong herding instinct, the Australian Shepherd excels in various dog sports and activities. They are known to be highly trainable and eager to please. Although initially reserved with strangers, they are generally good-natured, affectionate, and protective towards their families.",
+       "avatar":"avatars/australian_shepherd.png",
+       "normalizedName":"australian_shepherd"
+    },
+    {
+       "name":"Australian terrier",
+       "training_index":12,
+       "description":"The Australian Terrier, also known as 'Aussie', is a small and sturdy breed originating from Australia. They have an average lifespan of around 12-15 years. With a bold and spirited nature, these dogs are fiercely protective of their loved ones. They are incredibly intelligent and highly trainable. Aussie Terriers are sociable but may display aggression towards other animals if not properly introduced. Their wiry coat requires regular brushing and occasional hand-stripping. Overall, this lively breed makes a devoted and energetic addition to any family.",
+       "avatar":"avatars/australian_terrier.png",
+       "normalizedName":"australian_terrier"
+    },
+    {
+       "name":"Basenji",
+       "training_index":13,
+       "description":"The Basenji, also known as the \"African Barkless Dog,\" is a small to medium-sized breed with a short, sleek coat. This breed has a life expectancy of about 12-14 years. Known for their intelligence and independence, Basenjis can be quite reserved with strangers but are affectionate and loyal to their families. They are a highly energetic breed and require regular exercise to keep them content. The Basenji's unique trait is its ability to yodel instead of bark, which is why it is often called the \"barkless\" dog.",
+       "avatar":"avatars/basenji_dog.png",
+       "normalizedName":"basenji_dog"
+    },
+    {
+       "name":"Basset hound",
+       "training_index":14,
+       "description":"The Basset Hound is a charming, low-slung breed known for its long ears and droopy expression. They typically live around 10-12 years. With a lovable and friendly nature, Basset Hounds get along well with children, other pets, and strangers. However, they may have a stubborn streak and require patient training. These gentle and docile dogs are great companions and adapt well to both city and country life. They are also known for their exceptional sense of smell, making them excellent tracking and trailing dogs.",
+       "avatar":"avatars/basset_hound.png",
+       "normalizedName":"basset_hound"
+    },
+    {
+       "name":"Beagle",
+       "training_index":15,
+       "description":"The Beagle is a friendly and outgoing breed known for their floppy ears and expressive eyes. They have an average lifespan of around 10-15 years. Beagles are intelligent, lively, and affectionate, making them great family pets. They have a keen sense of smell and are often used in tracking and hunting. While they can be a bit stubborn at times, Beagles are generally good-natured and get along well with children and other pets. They require regular exercise to keep them happy and healthy and make for a wonderful addition to any active household.",
+       "avatar":"avatars/beagle.png",
+       "normalizedName":"beagle"
+    },
+    {
+       "name":"Bearded collie",
+       "training_index":16,
+       "description":"The Bearded Collie, also known as the 'Beardie', is a medium-sized dog breed with a shaggy coat and an average lifespan of 12-14 years. They are highly intelligent, energetic, and friendly, making them excellent companions. Bearded Collies are known for their herding capabilities and independent nature. They require regular grooming to maintain their long, beautiful coats, but their amiable and outgoing character makes them suitable for families with children and other pets. These dogs thrive in active environments where they can engage in physical and mental exercise.",
+       "avatar":"avatars/bearded_collie.png",
+       "normalizedName":"bearded_collie"
+    },
+    {
+       "name":"Beauceron",
+       "training_index":17,
+       "description":"The Beauceron is a large and athletic working dog with a strong and imposing presence. They have a double coat, usually in black and tan coloration, and their average lifespan is around 10-12 years. Known for their intelligence and loyalty, Beaucerons make excellent guard dogs and are often utilized in police and military work. They are highly trainable and need regular mental and physical stimulation to thrive. Despite their impressive size, they are generally gentle and affectionate with their family members, though they can be reserved around strangers.",
+       "avatar":"avatars/beauceron_dog.png",
+       "normalizedName":"beauceron_dog"
+    },
+    {
+       "name":"Bedlington terrier",
+       "training_index":18,
+       "description":"The Bedlington Terrier is an elegant and gentle breed known for its unique lamb-like appearance, with a curly, woolly coat. It has an average lifespan of around 14 years. This spirited dog is intelligent and confident, making it both easy to train and a great companion. Though friendly and affectionate with its family, it can be cautious around strangers and may display some prey drive. The Bedlington Terrier is an excellent choice for families and individuals seeking a stylish, active, and devoted companion.",
+       "avatar":"avatars/bedlington_terrier.png",
+       "normalizedName":"bedlington_terrier"
+    },
+    {
+       "name":"Belgian malinois",
+       "training_index":19,
+       "description":"The Belgian Malinois is a medium-sized, agile and intelligent dog breed known for its strong work ethic and protective instinct. They excel in various tasks such as police work, search and rescue, and obedience training. On average, they have a lifespan of 12-14 years. Belgian Malinois are highly energetic and require mental and physical stimulation to be happy. They are loyal to their families and make excellent working companions, but they can be reserved with strangers. Due to their intense nature, it is important to provide them with proper training and socialization from an early age.",
+       "avatar":"avatars/belgian_tervuren.png",
+       "normalizedName":"belgian_tervuren"
+    },
+    {
+       "name":"Belgian sheepdog",
+       "training_index":20,
+       "description":"The Belgian Sheepdog is a strong, versatile breed known for its intelligence and loyalty. They have a black, medium-length coat and are often referred to as the Groenendael. The average lifespan of the Belgian Sheepdog is around 10-12 years. They are highly agile and excel in various activities like obedience, herding, and agility. With proper training and socialization, they make excellent, protective family pets. They are generally reserved around strangers but form strong bonds with their families. These dogs require an active lifestyle and do best with experienced owners who can provide them with mental and physical stimulation.",
+       "avatar":"avatars/belgian_sheepdog.png",
+       "normalizedName":"belgian_sheepdog"
+    },
+    {
+       "name":"Belgian tervuren",
+       "training_index":21,
+       "description":"The Belgian Tervuren is an elegant and intelligent breed, known for its stunning long, silky coat and strong, agile build. It has a life expectancy of around 10-12 years. This versatile dog excels in various roles including herding and protection work, thanks to its alert and energetic nature. The Tervuren is highly trainable and thrives in an environment where it receives plenty of mental and physical stimulation. With a natural tendency to be devoted and watchful towards its family, the Belgian Tervuren makes a vigilant yet loyal companion.",
+       "avatar":"avatars/belgian_tervuren.png",
+       "normalizedName":"belgian_tervuren"
+    },
+    {
+       "name":"Bernese mountain dog",
+       "training_index":22,
+       "description":"The Bernese Mountain Dog is a large and powerful breed known for its stunning tri-color coat, featuring markings of black, white, and rust. These loyal and friendly dogs have an average lifespan of 7-9 years. Bernese Mountain Dogs are calm and gentle by nature, making them excellent family pets. With proper socialization, they get along well with children, strangers, and other pets. They have a strong work ethic and were originally bred as draft animals. Their size and strength make them well-suited for activities such as carting and herding.",
+       "avatar":"avatars/bernese_mountain_dog.png",
+       "normalizedName":"bernese_mountain_dog"
+    },
+    {
+       "name":"Bichon frise",
+       "training_index":23,
+       "description":"The Bichon Frise is a charming and affectionate toy breed known for its distinctive puffed white coat. With an average lifespan of 12-15 years, this breed is known for its playful and friendly nature. Bichon Frises are highly sociable and enjoy the company of both humans and other pets. They are intelligent and eager to please, making them fairly easy to train. Their small size and cheerful temperament make them well-suited for apartment living. Overall, the Bichon Frise is a delightful companion for any household.",
+       "avatar":"avatars/bichon_frise.png",
+       "normalizedName":"bichon_frise"
+    },
+    {
+       "name":"Black and tan coonhound",
+       "training_index":24,
+       "description":"The Black and Tan Coonhound is a powerful and athletic breed known for its striking coat of black and tan. They have a lifespan of around 10-12 years. Naturally independent and intelligent, these dogs are skilled scent hounds capable of tracking and trailing game. They are friendly, social, and get along well with both humans and other dogs. A versatile breed that thrives in both urban and rural environments, the Black and Tan Coonhound makes a loyal companion and is always up for an adventure.",
+       "avatar":"avatars/black_and_tan_coonhound.png",
+       "normalizedName":"black_and_tan_coonhound"
+    },
+    {
+       "name":"Black russian terrier",
+       "training_index":25,
+       "description":"The Black Russian Terrier is a large and powerful breed known for its intelligence and loyalty. They have a second title, \"Stalin's dog,\" as they were created in the former Soviet Union by the Red Army. Typically, they live around 10-14 years. With proper training and socialization, they can be gentle and loving with their family, but they are naturally aloof with strangers. This breed requires regular exercise and mental stimulation to keep them happy and healthy. They have a distinctive double coat that requires regular grooming to prevent matting. Overall, the Black Russian Terrier makes a devoted and protective companion.",
+       "avatar":"avatars/black_russian_terrier.png",
+       "normalizedName":"black_russian_terrier"
+    },
+    {
+       "name":"Bloodhound",
+       "training_index":26,
+       "description":"The Bloodhound is a large and powerful breed, known for its exceptional sense of smell, making it one of the best tracking dogs in the world. With a lifespan of about 10-12 years, this breed is loyal, gentle, and sociable. Bloodhounds are known for their droopy skin and long, floppy ears, which aid in capturing scent particles. Although they are friendly and affectionate, they can have a stubborn streak and require patient training. On the plus side, their calm demeanor and gentle nature make them great family pets.",
+       "avatar":"avatars/bloodhound.png",
+       "normalizedName":"bloodhound"
+    },
+    {
+       "name":"Bluetick coonhound",
+       "training_index":27,
+       "description":"The Bluetick Coonhound is a breed known for its unique blue and black speckled coat. This energetic dog has a lifespan of around 11-12 years. With a strong hunting instinct, the Bluetick Coonhound is a skilled scent tracker and excel in performance events. They are friendly and gentle, making them great family pets. However, they need plenty of exercise and mental stimulation to channel their energy. With proper training and socialization, they can get along well with other dogs and strangers. Bluetick Coonhounds are best suited for active owners who can provide them with ample physical activity.",
+       "avatar":"avatars/bluetick_coonhound.png",
+       "normalizedName":"bluetick_coonhound"
+    },
+    {
+       "name":"Border collie",
+       "training_index":28,
+       "description":"The Border Collie is a highly energetic and intelligent breed, known for its exceptional herding abilities. This medium-sized dog typically lives for 12-15 years. With a strong work ethic and intense focus, the Border Collie excels in various activities, including agility and obedience training. They are highly responsive to training and thrive when given mental and physical stimulation. This breed is also incredibly loyal to their family and can be protective, but can sometimes exhibit shyness toward strangers. The Border Collie is best suited for an active household that can provide plenty of exercise and mental stimulation.",
+       "avatar":"avatars/border_collie.png",
+       "normalizedName":"border_collie"
+    },
+    {
+       "name":"Border terrier",
+       "training_index":29,
+       "avatar":"avatars/border_terrier.png",
+       "normalizedName":"border_terrier"
+    },
+    {
+       "name":"Borzoi",
+       "training_index":30,
+       "description":"The Borzoi, also known as the 'Russian Wolfhound', is a regal and elegant dog breed. It has a graceful yet strong build, and a silky, flowing coat. This breed typically lives around 10-12 years. Borzois are gentle and reserved, but also intelligent and independent. They are known for their sighthound instincts and incredible speed. With their aristocratic presence, Borzois make loyal and affectionate family pets, although they can be reserved with strangers. Their calm and quiet nature makes them adaptable to both city and country living.",
+       "avatar":"avatars/borzoi.png",
+       "normalizedName":"borzoi"
+    },
+    {
+       "name":"Boston terrier",
+       "training_index":31,
+       "description":"The Boston Terrier, known as the 'American Gentleman', is a small breed with a smooth coat. They have an average lifespan of around 11-13 years. These friendly dogs are well-known for their affectionate and lively nature. Boston Terriers are intelligent and eager to please, making them easily trainable. They are great with kids and are generally sociable with other pets. Despite their size, Boston Terriers have a sturdy build and enjoy participating in physical activities. They make excellent companions for both families and individuals living in small spaces.",
+       "avatar":"avatars/boston_terrier.png",
+       "normalizedName":"boston_terrier"
+    },
+    {
+       "name":"Bouvier des flandres",
+       "training_index":32,
+       "description":"The Bouvier des Flandres, also known as 'Flanders Cattle Dog', is a strong and intelligent breed with a rough, weather-resistant coat. It has an average lifespan of 10-12 years. With a calm and gentle temperament, the Bouvier is loyal to its family and is great with children. They are protective and always alert, making them wonderful watchdogs. Known for their high trainability and versatility, they excel in various roles including herding, search and rescue, and even serving as therapy dogs. This breed requires regular exercise and grooming to keep them happy and healthy.",
+       "avatar":"avatars/bouvier_des_flandres.png",
+       "normalizedName":"bouvier_des_flandres"
+    },
+    {
+       "name":"Boxer",
+       "training_index":33,
+       "description":"The Boxer is a medium-sized breed known for its strong and muscular physique. With an average lifespan of 9-12 years, they are loyal and protective, making them excellent family dogs. Boxers are known for their friendly and playful nature, making them great with children. They are spirited, energetic, and love being part of an active household. Their intelligence and trainability make them versatile and successful in various dog sports and activities. Boxers are also well-regarded as service dogs, therapy dogs, and working dogs due to their dedication and determination.",
+       "avatar":"avatars/boxer.png",
+       "normalizedName":"boxer"
+    },
+    {
+       "name":"Boykin spaniel",
+       "training_index":34,
+       "description":"The Boykin Spaniel is a medium-sized breed known for its exceptional hunting skills and friendly nature. With an average lifespan of 10-15 years, these dogs are a popular choice for active individuals and families. They are intelligent, loving, and easy to train, making them a joyful addition to any household. Boykin Spaniels have a beautiful brown coat and are well-muscled, enabling them to excel in various tasks. They are highly sociable and enjoy spending time with their humans, making them an excellent choice for those seeking a loyal and companionable pet.",
+       "avatar":"avatars/boykin_spaniel.png",
+       "normalizedName":"boykin_spaniel"
+    },
+    {
+       "name":"Briard",
+       "training_index":35,
+       "description":"The Briard, also known as 'Chien Berger de Brie' or 'Bieuard', is a strong and agile dog breed with a double coat that gives it a charming, long-haired appearance. They have an average lifespan of 10-12 years. Briards are intelligent, loyal, and protective, making them excellent family dogs. They are known for their herding instincts and need regular mental and physical exercise. With proper socialization, they are friendly towards strangers and get along well with children and other pets. Their size and energetic nature make them better suited for families with spacious homes and a love for outdoor activities.",
+       "avatar":"avatars/briard.png",
+       "normalizedName":"briard"
+    },
+    {
+       "name":"Brittany",
+       "training_index":36,
+       "description":"The Brittany is a medium-sized breed known for its intelligence and agility. It typically lives around 12-14 years. Originally bred as a hunting dog, the Brittany is energetic and loves to play fetch and participate in outdoor activities. They are also known for their friendly and gentle nature, making them great family pets. They are eager to please and easy to train, but require regular mental and physical stimulation to prevent boredom. With their manageable size and adaptable nature, the Brittany can thrive in both urban and rural environments.",
+       "avatar":"avatars/brittany.png",
+       "normalizedName":"brittany"
+    },
+    {
+       "name":"Brussels griffon",
+       "training_index":37,
+       "description":"The Brussels Griffon is a small and lively dog breed known for its charming personality and distinctive face resembling that of Ewoks from Star Wars. With an average lifespan of 12-15 years, these affectionate and intelligent companions are often referred to as \"Velcro dogs\" due to their unwavering loyalty and desire to always be by their owners' side. Brussels Griffons are generally good with children and enjoy being part of a loving family. Despite their small size, they are fearless and alert, making them excellent watchdogs. Their size also makes them suitable for apartment living.",
+       "avatar":"avatars/brussels_griffon.png",
+       "normalizedName":"brussels_griffon"
+    },
+    {
+       "name":"Bull terrier",
+       "training_index":38,
+       "description":"Bull Terrier, known for its distinct egg-shaped head, is a strong and muscular breed that typically lives for 10-12 years. With a playful and mischievous nature, they are often described as clowns. They thrive on human companionship and are known to be affectionate and loyal towards their families. Despite their friendly demeanor, Bull Terriers can be stubborn at times, requiring consistent training and socialization. Due to their high energy levels, they require regular exercise and mental stimulation. They can adapt well to urban living, making them a potential companion for those seeking an active and loving pet.",
+       "avatar":"avatars/bull_terrier.png",
+       "normalizedName":"bull_terrier"
+    },
+    {
+       "name":"Bulldog",
+       "training_index":39,
+       "description":"The Bulldog is a medium-sized, muscular dog with a distinctive wrinkled face and a sturdy build. They have an average lifespan of 8-10 years. Despite their tough appearance, Bulldogs are known for their gentle and affectionate nature. They are loyal and protective of their family, making them excellent family pets. Bulldogs have a calm and easygoing temperament, but can also be stubborn at times. They require minimal exercise and are well-suited to apartment living. However, they may snore and drool due to their unique facial features.",
+       "avatar":"avatars/bulldog.png",
+       "normalizedName":"bulldog"
+    },
+    {
+       "name":"Bullmastiff",
+       "training_index":40,
+       "description":"The Bullmastiff is a powerful and dignified breed known for its loyal and protective nature. With an average lifespan of 8-10 years, this breed is often referred to as a \"gentle giant.\" Bullmastiffs are confident and courageous, making them excellent guard dogs. They are gentle and affectionate with their families, but can be reserved with strangers. Their large size and calm demeanor make them well-suited for households with older children and ample space. With a short coat and minimal exercise requirements, the Bullmastiff is a low-maintenance breed that thrives as a devoted and sturdy family companion.",
+       "avatar":"avatars/bullmastiff.png",
+       "normalizedName":"bullmastiff"
+    },
+    {
+       "name":"Cairn terrier",
+       "training_index":41,
+       "description":"The Cairn Terrier is a small yet tough breed that is known for its shaggy coat, alert expression, and friendly nature. With an average lifespan of 12-15 years, this dog is a loyal companion to its family. The Cairn Terrier is fearless and inquisitive, always ready for an adventure. Though it can be reserved with strangers, it tends to get along well with other dogs. With its compact size and adaptable nature, the Cairn Terrier is equally comfortable in both urban and rural settings.",
+       "avatar":"avatars/cairn_terrier.png",
+       "normalizedName":"cairn_terrier"
+    },
+    {
+       "name":"Canaan dog",
+       "training_index":42,
+       "description":"The Canaan Dog is a medium-sized, ancient breed known for its natural abilities and quick intelligence. With an average lifespan of 12-15 years, this breed is highly adaptable and can thrive in a variety of environments. Equally affectionate and protective, the Canaan Dog forms strong bonds with its family and can handle alone time when necessary. Its strong territorial instincts make it an excellent watchdog, but proper socialization is important to prevent potential aggression towards strangers or other animals. Overall, the Canaan Dog's versatility and loyalty make it a devoted companion for active individuals or families.",
+       "avatar":"avatars/canaan_dog.png",
+       "normalizedName":"canaan_dog"
+    },
+    {
+       "name":"Cane corso",
+       "training_index":43,
+       "description":"The Cane Corso is a large and powerful Italian breed known for its protective nature. With an average lifespan of 9-12 years, this confident and stable dog is fiercely loyal to its family. While it may appear reserved with strangers, the Cane Corso is highly trainable and eager to please. With proper socialization and training, it can coexist well with other animals and children. Its muscular build, intelligence, and natural guarding instincts make it an excellent choice for experienced dog owners in need of a dedicated and loving companion.",
+       "avatar":"avatars/cane_corso.png",
+       "normalizedName":"cane_corso"
+    },
+    {
+       "name":"Cardigan welsh corgi",
+       "training_index":44,
+       "description":"The Cardigan Welsh Corgi is a small, sturdy herding dog with a long body and short legs. Known for its signature tail that resembles a fox brush, this breed is intelligent, loyal, and protective. They have an average lifespan of 12-15 years. Cardigans are excellent family dogs and get along well with children and other pets, although they can be reserved around strangers. With proper training and socialization, they make wonderful companions and are well-suited for both rural and urban environments.",
+       "avatar":"avatars/cardigan_welsh_corgi.png",
+       "normalizedName":"cardigan_welsh_corgi"
+    },
+    {
+       "name":"Cavalier king charles spaniel",
+       "training_index":45,
+       "description":"The Cavalier King Charles Spaniel is a charming and affectionate breed known for its long, silky coat. It has an average lifespan of around 9-14 years. This breed is friendly, sociable, and loves to please its owners, making it a perfect companion. They get along well with children and other pets, and their adaptability enables them to thrive both in apartments and larger homes. The Cavalier King Charles Spaniel's playful nature and gentle temperament make it a popular choice for families and individuals seeking a loyal and loving pet.",
+       "avatar":"avatars/cavalier_king_charles_spaniel.png",
+       "normalizedName":"cavalier_king_charles_spaniel"
+    },
+    {
+       "name":"Chesapeake bay retriever",
+       "training_index":46,
+       "description":"The Chesapeake Bay Retriever is a powerful and intelligent dog breed known for its prowess in water sports and hunting. With an average lifespan of 10-12 years, they are friendly, loyal, and protective of their family. Their dense, oily coat provides excellent insulation in water, and their strong swimming abilities make them excellent retrievers. Known for their endurance and determination, Chesapeake Bay Retrievers thrive in active households where they receive plenty of mental and physical stimulation. Extremely trainable and self-assured, they can sometimes be reserved around strangers but are generally good-natured and gentle with children.",
+       "avatar":"avatars/chesapeake_bay_retriever.png",
+       "normalizedName":"chesapeake_bay_retriever"
+    },
+    {
+       "name":"Chihuahua",
+       "training_index":47,
+       "description":"The Chihuahua is a tiny breed known for its big heart. It has a lifespan of about 12-20 years. Affectionate and loyal, the Chihuahua is devoted to its owners and may be protective of them. They are often wary of strangers, making them excellent watchdogs. Despite their small size, Chihuahuas are confident and lively, with a spirited personality that adds charm to any home. They adapt well to apartment living and are a popular choice for those seeking a small, loving companion.",
+       "avatar":"avatars/chihuahua.png",
+       "normalizedName":"chihuahua"
+    },
+    {
+       "name":"Chinese crested",
+       "training_index":48,
+       "description":"The Chinese Crested is a unique and elegant breed known for its lack of fur and its distinctive crest of hair on its head and tail. They can live for an average of 12-14 years. Despite their lack of hair, these dogs are friendly, affectionate, and make excellent family pets. They are sensitive and do well with positive reinforcement training. Chinese Cresteds are generally good with children and can adapt well to living in apartments. Their small size and hypoallergenic coat make them suitable for people with allergies.",
+       "avatar":"avatars/chinese_crested.png",
+       "normalizedName":"chinese_crested"
+    },
+    {
+       "name":"Chinese shar-pei",
+       "training_index":49,
+       "description":"The Chinese Shar-Pei, a unique breed known for its wrinkled skin and blue-black tongue, has an average lifespan of 9-11 years. With a self-assured and independent nature, this dog possesses an old-world charm that's hard to resist. While the Shar-Pei is devoted and protective towards its family, it may be reserved or aloof towards strangers. Known to be relatively calm and low-maintenance, they are a great fit for experienced dog owners who appreciate their distinct appearance and strong-willed personality.",
+       "avatar":"avatars/chinese_shar-pei.png",
+       "normalizedName":"chinese_shar-pei"
+    },
+    {
+       "name":"Chow chow",
+       "training_index":50,
+       "description":"The Chow Chow is a strong and sturdy breed with a thick coat that comes in various colors. They usually live between 9 to 15 years. Known for their aloof nature, Chow Chows can be independent and reserved but are profoundly loyal to their families. They require early socialization and consistent training. With a dignified presence, this breed carries themselves with a distinct bear-like appearance. Chow Chows are known to be good watchdogs but can be wary around strangers and other animals. A well-exercised and well-trained Chow Chow can make a devoted companion.",
+       "avatar":"avatars/chow_chow.png",
+       "normalizedName":"chow_chow"
+    },
+    {
+       "name":"Clumber spaniel",
+       "training_index":51,
+       "description":"The Clumber Spaniel is a large and gentle dog breed with a dense and soft coat that comes in various shades of white and lemon. With an average lifespan of 10-12 years, it is known for its calm and easygoing nature. Intelligent and eager to please, the Clumber Spaniel enjoys spending time with its family and gets along well with children and other pets. This breed may require regular grooming to maintain its beautiful coat. With its friendly and mellow disposition, the Clumber Spaniel makes a wonderful companion for both rural and urban living.",
+       "avatar":"avatars/clumber_spaniel.png",
+       "normalizedName":"clumber_spaniel"
+    },
+    {
+       "name":"Cocker spaniel",
+       "training_index":52,
+       "description":"The Cocker Spaniel, also referred to as a 'Merry Cocker', is a medium-sized breed known for their beautiful, silky coat. They have a lifespan of about 12-14 years. With a friendly and affectionate nature, they make excellent family pets and are great with children. Cocker Spaniels are intelligent and trainable, always eager to please their owners. They have a moderate energy level and enjoy regular exercise and playtime. This breed is gentle and sociable, getting along well with strangers and animals alike.",
+       "avatar":"avatars/cocker_spaniel.png",
+       "normalizedName":"cocker_spaniel"
+    },
+    {
+       "name":"Collie",
+       "training_index":53,
+       "description":"The Collie is a medium-sized herding dog known for its intelligence, agility, and strong work ethic. With an average lifespan of 10-14 years, Collies are loyal and dedicated to their families, making them excellent companions and watchdogs. They are highly trainable and excel in various activities, including obedience, herding, and canine sports. The breed is recognized for its beautiful, long coat and elegant appearance. Collies are known for their gentle and kind nature, making them exceptional family pets. They require regular exercise and mental stimulation to thrive in any environment.",
+       "avatar":"avatars/collie.png",
+       "normalizedName":"collie"
+    },
+    {
+       "name":"Curly-coated retriever",
+       "training_index":54,
+       "description":"The Curly-coated Retriever is a versatile and athletic dog breed with a unique curly coat. They have a life expectancy of around 9-12 years. Known for their intelligence and fearlessness, Curly-coated Retrievers excel in water retrievals and other types of hunting activities. They are affectionate and loyal to their families, but they may be reserved around strangers. With their medium size, they can adapt well to both urban and rural living environments.",
+       "avatar":"avatars/curly-coated_retriever.png",
+       "normalizedName":"curly-coated_retriever"
+    },
+    {
+       "name":"Dachshund",
+       "training_index":55,
+       "description":"The Dachshund, also known as the 'Sausage Dog' or 'Wiener Dog', is a breed known for its long body and short legs. With an average lifespan of around 12-16 years, this small dog is popular for its energetic and lively nature. Despite their size, Dachshunds are bold and confident, displaying a keen hunting instinct. They are loyal and loving towards their family but can be wary of strangers. With their adaptable temperament and affectionate personality, Dachshunds make great companions for both city dwellers and families alike.",
+       "avatar":"avatars/dachshund.png",
+       "normalizedName":"dachshund"
+    },
+    {
+       "name":"Dalmatian",
+       "training_index":56,
+       "description":"The Dalmatian is a unique and striking breed known for its distinctive coat of black spots on a white background. With an average lifespan of 10-13 years, these dogs are known for being energetic, active, and highly trainable. They are great family pets and love to be included in a variety of activities. Their friendly and outgoing nature makes them good with children and other pets. However, they can also be independent and stubborn, requiring consistent training and socialization from an early age. The Dalmatian's sleek and athletic build makes them an excellent choice for those who enjoy outdoor activities and exercise.",
+       "avatar":"avatars/dalmatian.png",
+       "normalizedName":"dalmatian"
+    },
+    {
+       "name":"Dandie dinmont terrier",
+       "training_index":57,
+       "description":"The Dandie Dinmont Terrier is a small breed known for its unique appearance, with a long body, short legs, and a large head. This breed has a lifespan of around 12-15 years. Dandie Dinmonts are known for their independent and bold personalities, as well as their loyalty to their owners. Although they can sometimes be reserved with strangers and other dogs, they make excellent companions and are suitable for urban living due to their small size. Additionally, they have a distinctive coat that requires regular grooming to maintain its appearance.",
+       "avatar":"avatars/dandie_dinmont_terrier.png",
+       "normalizedName":"dandie_dinmont_terrier"
+    },
+    {
+       "name":"Doberman pinscher",
+       "training_index":58,
+       "description":"The Doberman Pinscher, also referred to as a 'Doberman', is a medium to large-sized breed known for its sleek, muscular build and striking appearance. With an average lifespan of 10-13 years, this athletic breed is highly intelligent, loyal, and easily trainable. Although they can be protective, Dobermans are generally friendly and loving towards their families. They require regular exercise and mental stimulation to keep them happy and content. With their imposing presence and natural guarding instincts, Dobermans make excellent family pets and can excel in various activities such as obedience training and agility.",
+       "avatar":"avatars/doberman_pinscher.png",
+       "normalizedName":"doberman_pinscher"
+    },
+    {
+       "name":"Dogue de bordeaux",
+       "training_index":59,
+       "description":"The Dogue de Bordeaux is a massive and powerful breed known for its impressive size and wrinkled face. They typically live around 8-10 years. Despite their intimidating appearance, they are gentle and affectionate towards their family. They are generally patient and good with children, but can be wary of strangers. Due to their size, they require a large living space and regular exercise. This breed is known for their loyalty and protective nature, making them excellent family companions and watch dogs.",
+       "avatar":"avatars/dogue_de_bordeaux.png",
+       "normalizedName":"dogue_de_bordeaux"
+    },
+    {
+       "name":"English cocker spaniel",
+       "training_index":60,
+       "description":"The English Cocker Spaniel is a medium-sized, friendly and energetic breed known for their silky, wavy coat and long, floppy ears. They have an average lifespan of 11 to 14 years. This versatile and intelligent breed is perfect for both an active family setting and a calm indoor environment. English Cocker Spaniels are generally affectionate, easy to train, and great with children. They love to exercise, including swimming and retrieving, and require regular grooming to maintain their coat's beauty. With their loving nature and adaptability, they make wonderful companions and family pets.",
+       "avatar":"avatars/english_toy_spaniel.png",
+       "normalizedName":"english_toy_spaniel"
+    },
+    {
+       "name":"English setter",
+       "training_index":61,
+       "description":"The English Setter is a elegant and graceful dog breed known for its beautiful, feathery coat. With an average lifespan of 10-12 years, they exhibit a friendly and gentle nature, making them great family pets. English Setters are highly intelligent and sensitive, known for their ability to get along well with children and other animals. They require moderate exercise and are known for their playful and happy-go-lucky temperament. With their stunning looks and sweet disposition, English Setters make wonderful companions for those who enjoy an active and loving dog.",
+       "avatar":"avatars/english_setter.png",
+       "normalizedName":"english_setter"
+    },
+    {
+       "name":"English springer spaniel",
+       "training_index":62,
+       "description":"The English Springer Spaniel is a medium-sized, active dog known for its enthusiasm and friendly nature. With an average lifespan of 10-14 years, this breed is recognized for its versatility and skills in various activities like hunting and agility. English Springer Spaniels are intelligent, gentle, and loyal, making them great family pets. They thrive on human interaction and are sociable with children and other household pets. Their love for outdoor adventures and ability to adapt to different environments make them a popular choice for active individuals or families who enjoy an active lifestyle.",
+       "avatar":"avatars/english_springer_spaniel.png",
+       "normalizedName":"english_springer_spaniel"
+    },
+    {
+       "name":"English toy spaniel",
+       "training_index":63,
+       "description":"The English Toy Spaniel, also known as the King Charles Spaniel, is a small and elegant breed. They have an average lifespan of around 10-12 years. This breed is known for its affectionate and gentle nature, making it a perfect family pet. English Toy Spaniels are friendly with children and get along well with other pets. They have a calm and quiet demeanor and are adaptable to various living environments. Their beautiful, silky coat requires regular grooming to maintain its appearance. Overall, the English Toy Spaniel is a delightful and loyal companion.",
+       "avatar":"avatars/english_toy_spaniel.png",
+       "normalizedName":"english_toy_spaniel"
+    },
+    {
+       "name":"Entlebucher mountain dog",
+       "training_index":64,
+       "description":"The Entlebucher Mountain Dog is a medium-sized, muscular breed known for its intelligence and herding abilities. With an average lifespan of 10-13 years, these dogs are loyal, friendly, and energetic. They are highly trainable and excel in various activities such as obedience, agility, and herding trials. Their dense, tri-colored coat requires regular brushing to maintain its appearance. While they are affectionate towards their family, they can be reserved with strangers, making them excellent watchdogs. The Entlebucher Mountain Dog is a versatile breed suitable for active households.",
+       "avatar":"avatars/entlebucher_mountain_dog.png",
+       "normalizedName":"entlebucher_mountain_dog"
+    },
+    {
+       "name":"Field spaniel",
+       "training_index":65,
+       "description":"The Field Spaniel is a medium-sized breed known for its intelligence and gentle nature. They have an average lifespan of 10-12 years. With a strong desire to please, these dogs are easy to train and make excellent family pets. Their friendly and sociable temperament allows them to get along well with children and other animals. Despite being loving and affectionate, they may be reserved with strangers until they warm up. Field Spaniels have a moderate energy level and require daily exercise to keep them happy and healthy.",
+       "avatar":"avatars/field_spaniel.png",
+       "normalizedName":"field_spaniel"
+    },
+    {
+       "name":"Finnish spitz",
+       "training_index":66,
+       "description":"The Finnish Spitz, nicknamed \"Barking Bird Dog,\" is a medium-sized breed known for its fox-like appearance and vibrant red-gold coat. They have an average lifespan of 12-15 years. Friendly and sociable, Finnish Spitz are great with families and can be protective of their owners. They have a strong prey drive and love to bark, so early training and socialization are important. Despite their size, they are energetic and need regular exercise. Finnish Spitz excel in activities like agility and obedience, and make wonderful companions for outdoor adventures.",
+       "avatar":"avatars/finnish_spitz.png",
+       "normalizedName":"finnish_spitz"
+    },
+    {
+       "name":"Flat-coated retriever",
+       "training_index":67,
+       "description":"The Flat-coated Retriever is a versatile and active dog breed known for its friendly and outgoing personality. They have a dense and shiny black or liver-colored coat that requires regular grooming. With an average lifespan of 10-12 years, these dogs are known for their intelligence, agility, and trainability. They are excellent family pets and get along well with children and other pets. Flat-coated Retrievers are energetic and love to participate in various activities, making them suitable for active households. Their friendly, vivacious nature makes them a popular choice for dog lovers.",
+       "avatar":"avatars/flat-coated_retriever.png",
+       "normalizedName":"flat-coated_retriever"
+    },
+    {
+       "name":"French bulldog",
+       "training_index":68,
+       "description":"French bulldogs, also known as Frenchies, are charming and adaptable dogs with a unique appearance. They have an average lifespan of 10-12 years. Despite their small size, French bulldogs have a big personality, displaying a friendly and affectionate nature towards their owners. Frenchies are good with children and tend to get along well with other pets. They make excellent companions due to their adaptability, making them suitable for various living situations, including urban environments.",
+       "avatar":"avatars/french_bulldog.png",
+       "normalizedName":"french_bulldog"
+    },
+    {
+       "name":"German pinscher",
+       "training_index":69,
+       "description":"The German Pinscher, often nicknamed 'The Pin' by enthusiasts, is a medium-sized breed known for its intelligence and self-assured demeanor. It has a smooth, short coat that requires minimal grooming. With an average lifespan of 12-14 years, the German Pinscher is an energetic and active breed that loves to explore its surroundings. It is fiercely protective of its family, making it an excellent watchdog. However, early socialization is crucial to prevent any aggression towards strangers and other animals. This adaptable breed thrives in both urban and rural environments, making it a versatile companion.",
+       "avatar":"avatars/german_pinscher.png",
+       "normalizedName":"german_pinscher"
+    },
+    {
+       "name":"German shepherd dog",
+       "training_index":70,
+       "avatar":"avatars/german_shepherd_dog.png",
+       "normalizedName":"german_shepherd_dog"
+    },
+    {
+       "name":"German shorthaired pointer",
+       "training_index":71,
+       "description":"The German Shorthaired Pointer is a versatile hunting dog known for its athleticism, intelligence, and loyalty. This breed has a short and dense coat that makes it suitable for various terrains and weather conditions. With an average lifespan of 12-14 years, these highly energetic dogs require regular exercise and mental stimulation. They are excellent swimmers and have a keen sense of smell, which makes them great at tracking game. Friendly and affectionate, German Shorthaired Pointers are also known to be good with children, making them an ideal family pet for an active household.",
+       "avatar":"avatars/german_shorthaired_pointer.png",
+       "normalizedName":"german_shorthaired_pointer"
+    },
+    {
+       "name":"German wirehaired pointer",
+       "training_index":72,
+       "description":"The German Wirehaired Pointer is a versatile hunting dog with a dense, waterproof wirehaired coat. They have an average lifespan of about 12-14 years. Known for their trainability and intelligence, they make excellent family pets and hunting partners. This breed is active and requires regular exercise to stay healthy and happy. With a loving and friendly nature, they get along well with children and other pets. German Wirehaired Pointers are well-suited for both urban and rural environments, as long as they receive enough mental and physical stimulation.",
+       "avatar":"avatars/german_wirehaired_pointer.png",
+       "normalizedName":"german_wirehaired_pointer"
+    },
+    {
+       "name":"Giant schnauzer",
+       "training_index":73,
+       "description":"The Giant Schnauzer is a large, powerful breed with a dense, wiry coat that gives it a striking appearance. They typically have a lifespan of 10-12 years. Known for their intelligence and boldness, they are loyal and protective of their families. Despite their imposing size, they can adapt well to urban living with proper exercise. They require regular grooming to maintain their coat and benefit from early socialization and training to help with their strong protective instincts. The Giant Schnauzer is a confident and spirited breed that thrives in an active and loving environment.",
+       "avatar":"avatars/giant_schnauzer.png",
+       "normalizedName":"giant_schnauzer"
+    },
+    {
+       "name":"Glen of imaal terrier",
+       "training_index":74,
+       "description":"The Glen of Imaal Terrier is a sturdy and resilient dog breed that hails from Ireland. It has a second title known as the \"Wicklow Terrier\". With an average lifespan of 12-15 years, these terriers have a confident and independent character. They are friendly and affectionate towards their families but may be reserved around strangers. Glen of Imaal Terriers are intelligent and adaptable, making them suitable for both urban and rural lifestyles. With their unique appearance and lively nature, they make wonderful companions for active individuals or families.",
+       "avatar":"avatars/glen_of_imaal_terrier.png",
+       "normalizedName":"glen_of_imaal_terrier"
+    },
+    {
+       "name":"Golden retriever",
+       "training_index":75,
+       "description":"The Golden Retriever is a friendly and intelligent dog breed known for its beautiful golden coat. It has an average lifespan of around 10-12 years. With a gentle and calm nature, they are great family pets and get along well with children and other animals. This breed is highly adaptable and excels in activities such as obedience, agility, and retrieving. Their friendly and loyal disposition makes them excellent therapy and service dogs. Golden Retrievers are often described as affectionate, loyal, and eager to please.",
+       "avatar":"avatars/golden_retriever.png",
+       "normalizedName":"golden_retriever"
+    },
+    {
+       "name":"Gordon setter",
+       "training_index":76,
+       "description":"The Gordon Setter is a loyal and intelligent dog breed known for its striking black and tan coat. With an average lifespan of 10-12 years, these energetic dogs excel in various activities like field trials and agility. Renowned for their friendly nature, they are devoted to their families and get along well with children and other pets. The Gordon Setter's strong hunting instincts and need for regular exercise make them better suited for active households. With proper training and socialization, they can become great companions for those who appreciate an adventurous and affectionate dog.",
+       "avatar":"avatars/gordon_setter.png",
+       "normalizedName":"gordon_setter"
+    },
+    {
+       "name":"Great dane",
+       "training_index":77,
+       "description":"The Great Dane, also known as the \"Apollo of Dogs,\" is a giant breed known for its majestic appearance and gentle nature. With an average lifespan of 6-8 years, this breed is loyal, friendly, and patient, making it excellent with children and families. Despite its size, the Great Dane is surprisingly gentle and friendly towards strangers. With minimal exercise needs, it comfortably adapts to urban lifestyles. Whether as a loyal guardian or a gentle giant, the Great Dane is a remarkable breed that captures hearts with its calm demeanor and towering presence.",
+       "avatar":"avatars/great_dane.png",
+       "normalizedName":"great_dane"
+    },
+    {
+       "name":"Great pyrenees",
+       "training_index":78,
+       "description":"The Great Pyrenees, also called the Pyrenean Mountain Dog, is a majestic and noble breed known for its large size and beautiful white coat. This gentle giant has an average lifespan of around 10-12 years. With a calm and patient demeanor, the Great Pyrenees is a great companion and protector. They are fiercely loyal to their family and make excellent watch dogs. However, they can be a bit reserved with strangers and require proper socialization. Their size and strength make them well-suited for guarding livestock and large properties.",
+       "avatar":"avatars/great_pyrenees.png",
+       "normalizedName":"great_pyrenees"
+    },
+    {
+       "name":"Greater swiss mountain dog",
+       "training_index":79,
+       "description":"The Greater Swiss Mountain Dog, also known as GSMD or Swissy, is a powerful and confident breed with a gentle and loving disposition. They have a lifespan of about 8-11 years. With a strong bond to their family, Swissies are loyal and dedicated, making excellent family pets. They are known for their patience with children and other animals, but can be reserved with strangers. This giant breed requires daily exercise and mental stimulation to stay happy and healthy. The Greater Swiss Mountain Dog is an adaptable companion, well-suited for both big open spaces and urban living.",
+       "avatar":"avatars/greater_swiss_mountain_dog.png",
+       "normalizedName":"greater_swiss_mountain_dog"
+    },
+    {
+       "name":"Greyhound",
+       "training_index":80,
+       "description":"The Greyhound is a sleek and elegant breed, renowned for its lightning-fast speed and agility. With an average lifespan of 10-13 years, these dogs are known for their gentle and affectionate nature. While they can be reserved and shy with strangers, they are devoted and loyal to their family. Greyhounds make great companions and thrive in calm and loving environments. Their adaptable nature allows them to adjust well to various living situations, making them suitable for both urban and rural areas.",
+       "avatar":"avatars/greyhound.png",
+       "normalizedName":"greyhound"
+    },
+    {
+       "name":"Havanese",
+       "training_index":81,
+       "description":"The Havanese is a small and charismatic dog breed known for its silky, floor-length coat. It typically has a lifespan of around 14-16 years and is an affectionate and outgoing companion. With their friendly nature and happy disposition, Havanese dogs get along well with kids, other pets, and strangers alike. This breed thrives on human interaction and loves being the center of attention. Their versatility makes them suitable for both apartment living and larger spaces, as long as they receive regular exercise and mental stimulation.",
+       "avatar":"avatars/havanese.png",
+       "normalizedName":"havanese"
+    },
+    {
+       "name":"Ibizan hound",
+       "training_index":82,
+       "description":"The Ibizan Hound is an elegant and athletic breed known for its speed and agility. With an average lifespan of 11-14 years, this ancient hunting breed from the Mediterranean is known for its exceptional jumping ability. Their sleek, short coat requires minimal grooming. They are intelligent, alert, and independent in nature. They are deeply loyal to their family but might be reserved with strangers. Suitable for active families, the Ibizan Hound thrives in environments with plenty of space to explore and run around.",
+       "avatar":"avatars/ibizan_hound.png",
+       "normalizedName":"ibizan_hound"
+    },
+    {
+       "name":"Icelandic sheepdog",
+       "training_index":83,
+       "description":"The Icelandic Sheepdog is a medium-sized dog breed known for its shaggy double coat and curled tail. It has an average lifespan of around 12-15 years. This breed is friendly, gentle, and loves being around its family. Icelandic Sheepdogs are known for their intelligence and quick learning abilities which make them easy to train. They are vigilant and protective, making them great watchdogs. With their energetic nature, they thrive in active households and enjoy outdoor activities. Their medium size makes them adaptable to both urban and rural living environments.",
+       "avatar":"avatars/icelandic_sheepdog.png",
+       "normalizedName":"icelandic_sheepdog"
+    },
+    {
+       "name":"Irish red and white setter",
+       "training_index":84,
+       "description":"The Irish Red and White Setter is a graceful and athletic breed known for its striking coat, combining patches of white with chestnut or red. It has an average lifespan of about 12-14 years. This setter is affectionate, friendly, and intelligent, making it an excellent family companion. With its easy-going nature and high energy levels, it thrives in an active household where it can be involved in plenty of exercise and mental stimulation. Their natural talent for hunting and scent tracking makes them great working dogs as well.",
+       "avatar":"avatars/irish_red_and_white_setter.png",
+       "normalizedName":"irish_red_and_white_setter"
+    },
+    {
+       "name":"Irish setter",
+       "training_index":85,
+       "description":"The Irish Setter is a charismatic and gentle dog breed known for its beautiful mahogany coat and friendly nature. With an average lifespan of 10-12 years, this medium-sized dog is highly active and requires plenty of exercise and mental stimulation. Their energetic and playful personalities make them great companions for families and children. This breed is intelligent and eager to please, making them well-suited for training. Irish Setters thrive in environments where they receive attention and affection, and their gentle demeanor often makes them good candidates for therapy work.",
+       "avatar":"avatars/irish_setter.png",
+       "normalizedName":"irish_setter"
+    },
+    {
+       "name":"Irish terrier",
+       "training_index":86,
+       "description":"The Irish Terrier is a lively and spirited breed, known for their spunky and confident personality. With an average lifespan of around 13-15 years, these dogs are tough and resilient. They have a distinctive red coat that requires regular grooming to maintain its crisp and wiry appearance. Irish Terriers are highly intelligent, loyal, and protective of their families. They thrive on activity and exercise, making them great companions for active individuals or families. However, they can be a bit stubborn at times and may assert their independence, so early training and socialization are essential.",
+       "avatar":"avatars/irish_terrier.png",
+       "normalizedName":"irish_terrier"
+    },
+    {
+       "name":"Irish water spaniel",
+       "training_index":87,
+       "description":"The Irish Water Spaniel is a medium-sized breed known for its unique curly coat and distinctive topknot of long, loose curls. This breed has an average lifespan of 10-12 years. Irish Water Spaniels are intelligent, friendly, and energetic. They are known for being excellent swimmers and have a strong retrieving instinct. This breed is adaptable and loves to be a part of active family life. They can be reserved with strangers but are generally good-natured and make wonderful companions for outdoor adventures. They thrive on mental and physical stimulation and require regular grooming to maintain their unusual coat.",
+       "avatar":"avatars/irish_water_spaniel.png",
+       "normalizedName":"irish_water_spaniel"
+    },
+    {
+       "name":"Irish wolfhound",
+       "training_index":88,
+       "description":"The Irish Wolfhound is a giant breed known for its impressive size and gentle nature. It is often referred to as the \"gentle giant\" due to its friendly and patient personality. With a lifespan of about 6-8 years, this breed requires a lot of space and daily exercise. Despite their daunting appearance, Irish Wolfhounds are known to be excellent with children and are generally very affectionate. They make loyal and devoted companions, and although they may be reserved with strangers, they are rarely aggressive. This breed's imposing physique makes them an impressive sight, but their temperament is one of calm and gentle elegance.",
+       "avatar":"avatars/irish_wolfhound.png",
+       "normalizedName":"irish_wolfhound"
+    },
+    {
+       "name":"Italian greyhound",
+       "training_index":89,
+       "description":"The Italian Greyhound is a sleek and elegant breed known for its grace and speed. With an average lifespan of 13-15 years, they are devoted and affectionate companions to their families. These dogs are known for their gentle and sensitive nature, often seeking comfort and warmth from their loved ones. While they may appear fragile, they display a surprising lively and playful character. Their small size and adaptability make them suitable for apartment living, and their charm and beauty make them a popular choice for dog enthusiasts.",
+       "avatar":"avatars/italian_greyhound.png",
+       "normalizedName":"italian_greyhound"
+    },
+    {
+       "name":"Japanese chin",
+       "training_index":90,
+       "description":"The Japanese Chin, also referred to as the Japanese Spaniel, is an elegant small breed known for its silky coat and expressive eyes. With an average lifespan of 10-12 years, the Japanese Chin is renowned for its affectionate and gentle nature. This breed is intelligent, adaptable, and makes a delightful companion. They thrive on human companionship and are well-suited for city dwellers due to their small size. Though reserved with strangers, the Japanese Chin is devoted to its family and can live harmoniously with other pets.",
+       "avatar":"avatars/japanese_chin.png",
+       "normalizedName":"japanese_chin"
+    },
+    {
+       "name":"Keeshond",
+       "training_index":91,
+       "description":"The Keeshond, also known as the 'Dutch Barge Dog', is a medium-sized breed with a plush double coat that gives it a teddy bear-like appearance. With an average lifespan of 12-14 years, this lovable and friendly dog is known for its intelligence and devotion to its family. Keeshonds are excellent watchdogs and get along well with children and other pets. They require moderate exercise and enjoy activities that engage their mind. Overall, the Keeshond is a delightful and loyal companion, perfect for both urban and suburban living.",
+       "avatar":"avatars/keeshond.png",
+       "normalizedName":"keeshond"
+    },
+    {
+       "name":"Kerry blue terrier",
+       "training_index":92,
+       "description":"The Kerry Blue Terrier is a medium-sized breed known for its distinct bluish coat that has a soft, wavy texture. With an average lifespan of 12-15 years, this intelligent and agile dog is adaptable to various environments. The Kerry Blue Terrier is known for its strong-willed and independent nature, needing consistent and patient training. Friendly and affectionate with its family, the breed can be initially reserved with strangers but warms up quickly. Their energetic and playful nature makes them an excellent companion for active individuals or families.",
+       "avatar":"avatars/kerry_blue_terrier.png",
+       "normalizedName":"kerry_blue_terrier"
+    },
+    {
+       "name":"Komondor",
+       "training_index":93,
+       "description":"The Komondor is a large and powerful breed, also known as the 'Hungarian Sheepdog'. It has a unique, corded coat that forms natural dreadlocks, giving it a distinct appearance. With an average lifespan of 10-12 years, this breed is known for its fierce loyalty and protective nature towards its family. The Komondor can be aloof with strangers and needs early socialization to prevent aggression. It requires a dedicated owner committed to providing consistent training and exercise to thrive. Despite its size, the Komondor can adapt well to urban living if given enough space and mental stimulation.",
+       "avatar":"avatars/komondor.png",
+       "normalizedName":"komondor"
+    },
+    {
+       "name":"Kuvasz",
+       "training_index":94,
+       "description":"The majestic Kuvasz is a large and powerful Hungarian breed known for its impressive white coat and regal appearance. With an average lifespan of around 10-12 years, these loyal and protective dogs make excellent family companions. Despite their gentle nature, they can display a strong guarding instinct, making them best suited to experienced owners who can provide firm but kind training. Intelligent and independent, the Kuvasz requires regular exercise and mental stimulation to thrive. With proper socialization, they can develop a loving bond with their family members while remaining wary of strangers.",
+       "avatar":"avatars/kuvasz.png",
+       "normalizedName":"kuvasz"
+    },
+    {
+       "name":"Labrador retriever",
+       "training_index":95,
+       "description":"The Labrador Retriever is a popular breed known for its friendly and outgoing personality. They are intelligent, active, and highly trainable. Labradors have a medium to large size and typically live for 10-12 years. They are great family dogs who are loving and patient with children. Labrador Retrievers are also excellent swimmers and have a strong retrieving instinct. They are often used as guide dogs, search and rescue dogs, and therapy dogs due to their gentle nature and strong sense of smell.",
+       "avatar":"avatars/labrador_retriever.png",
+       "normalizedName":"labrador_retriever"
+    },
+    {
+       "name":"Lakeland terrier",
+       "training_index":96,
+       "description":"The Lakeland Terrier is a small and feisty breed known for its wiry, dense coat that comes in various colors. They have an average lifespan of 12-15 years. With their confident and affectionate nature, Lakelands make excellent family pets. They are also known for being energetic, intelligent, and independent, requiring regular exercise and mental stimulation. While they can be reserved around strangers, they are generally friendly towards other dogs. Their adaptable size makes them suitable for both city and suburban living.",
+       "avatar":"avatars/lakeland_terrier.png",
+       "normalizedName":"lakeland_terrier"
+    },
+    {
+       "name":"Leonberger",
+       "training_index":97,
+       "description":"The Leonberger is a giant breed originating from Germany. They have a majestic appearance with a dense, water-resistant double coat in various colors. On average, they have a lifespan of 8-9 years. Despite their massive size, Leonbergers are known for their gentle and affectionate nature. They are highly intelligent, easy to train, and excellent with children and other pets. With regular exercise and socialization, they make loyal and loving family companions. Their calm and confident demeanor makes them suitable for both urban and rural living.",
+       "avatar":"avatars/leonberger.png",
+       "normalizedName":"leonberger"
+    },
+    {
+       "name":"Lhasa apso",
+       "training_index":98,
+       "description":"The Lhasa Apso is a charming and lively small dog breed known for its beautiful, long and luxurious coat. It has a notable lifespan of around 12-14 years. With an independent and dignified nature, the Lhasa Apso is both loyal and protective of its family. It can be aloof with strangers but remains affectionate and playful with those it knows well. This breed requires regular grooming to maintain its magnificent coat. Overall, the Lhasa Apso is a delightful companion for those seeking a devoted and regal four-legged friend.",
+       "avatar":"avatars/lhasa_apso.png",
+       "normalizedName":"lhasa_apso"
+    },
+    {
+       "name":"Lowchen",
+       "training_index":99,
+       "description":"The Lowchen, also known as the 'Little Lion Dog', is a small, lively, and playful breed with a long life expectancy ranging from 12-14 years. This intelligent and alert dog is affectionate and devoted to its family. Though friendly, it may be cautious with strangers and is generally good with children and other pets. With its low-shedding coat requiring regular grooming, the Lowchen is suitable for those who appreciate a small and loving companion that thrives in both rural and urban settings.",
+       "avatar":"avatars/lowchen.png",
+       "normalizedName":"lowchen"
+    },
+    {
+       "name":"Maltese",
+       "training_index":100,
+       "description":"The Maltese is a small and elegant breed known for its long, luxurious white coat. This delightful companion typically lives around 12-15 years. Affectionate and lively, they thrive on human companionship and love being the center of attention. Despite their small size, they have a brave and fearless nature. Maltese dogs are gentle and playful, making them great companions for families. Their adaptability also makes them suitable for apartment living. Overall, this breed is a charming and loving addition to any household.",
+       "avatar":"avatars/maltese.png",
+       "normalizedName":"maltese"
+    },
+    {
+       "name":"Manchester terrier",
+       "training_index":101,
+       "description":"The Manchester terrier is a stylish and agile breed with a sleek, black and tan coat. They have two sizes, the standard and the toy. They are an enthusiastic and intelligent breed that requires mental stimulation and physical exercise. Manchester terriers generally have a lifespan of 12-15 years. They are known to be loyal and affectionate to their families but can be reserved around strangers. With proper training and socialization, they can get along well with other dogs.",
+       "avatar":"avatars/manchester_terrier.png",
+       "normalizedName":"manchester_terrier"
+    },
+    {
+       "name":"Mastiff",
+       "training_index":102,
+       "description":"The Mastiff, also known as the 'Gentle Giant,' is a massive and powerful dog breed. With an average lifespan of around 6-10 years, they have a shorter life expectancy compared to other breeds. Known for its calm and loving nature, the Mastiff is incredibly loyal to its family and is great with children. Despite their gentle demeanor, they are excellent protectors. They require moderate exercise and enjoy being part of a loving family that can provide them with enough space to move around comfortably.",
+       "avatar":"avatars/mastiff.png",
+       "normalizedName":"mastiff"
+    },
+    {
+       "name":"Miniature schnauzer",
+       "training_index":103,
+       "description":"The Miniature Schnauzer is a small and energetic breed known for its distinctive beard and bushy eyebrows. With an average lifespan of 12-15 years, these dogs are loyal, affectionate, and playful. They can be slightly wary of strangers but are great with their families. Miniature Schnauzers are intelligent and easily trainable, making them ideal for various activities. They require regular exercise and grooming to keep their coat looking its best. These companions are well-suited for urban living due to their smaller size and adaptable nature.",
+       "avatar":"avatars/miniature_schnauzer.png",
+       "normalizedName":"miniature_schnauzer"
+    },
+    {
+       "name":"Neapolitan mastiff",
+       "training_index":104,
+       "description":"The Neapolitan Mastiff is a large and powerful breed known for its dense, wrinkled skin and massive stature. It has an impressive average lifespan of 8-10 years. Despite its intimidating appearance, this breed is loyal, calm, and gentle with its family, especially children. However, it can be standoffish towards strangers and other animals, displaying a protective nature. The Neapolitan Mastiff requires early socialization and training to ensure proper behavior. With its formidable size and strong protective instincts, this breed is best suited for experienced owners who can provide consistent leadership and sufficient exercise.",
+       "avatar":"avatars/neapolitan_mastiff.png",
+       "normalizedName":"neapolitan_mastiff"
+    },
+    {
+       "name":"Newfoundland",
+       "training_index":105,
+       "description":"The Newfoundland is a large breed dog known for its gentle and loving nature. They have a thick, waterproof coat and webbed feet, making them excellent swimmers. Typically lives around 8-10 years. Newfoundlands are known for being patient and protective, making them great family pets. They are sociable and good with children, but may be reserved with strangers. Their size and strength make them excellent working dogs, especially in water rescue situations. Considered a gentle giant, the Newfoundland is a loyal companion and is well-suited for both urban and rural living.",
+       "avatar":"avatars/newfoundland.png",
+       "normalizedName":"newfoundland"
+    },
+    {
+       "name":"Norfolk terrier",
+       "training_index":106,
+       "description":"The Norfolk Terrier is a small, spunky dog with a wiry coat and adorable drop ears. With an average lifespan of 12-15 years, they are loyal and affectionate towards their families. Though they may be reserved with strangers, they are generally friendly and get along well with children and other pets. Their agile and energetic nature makes them a great companion for active individuals or families. Known for their feisty and fearless disposition, the Norfolk Terrier is a delightful and charming breed.",
+       "avatar":"avatars/norfolk_terrier.png",
+       "normalizedName":"norfolk_terrier"
+    },
+    {
+       "name":"Norwegian buhund",
+       "training_index":107,
+       "description":"The Norwegian Buhund is a medium-sized Spitz-type dog breed with a thick double coat and a cheerful expression. They have an average lifespan of about 12-15 years. Known for their intelligence and versatility, these dogs are quick learners and excel in various dog sports and activities. Buhunds are loyal, lively, and love being part of a family. They have a natural herding instinct and make excellent watchdogs. With proper socialization, they get along well with children and other pets. Norwegian Buhunds are a great choice for active families looking for a spirited and dedicated companion.",
+       "avatar":"avatars/norwegian_buhund.png",
+       "normalizedName":"norwegian_buhund"
+    },
+    {
+       "name":"Norwegian elkhound",
+       "training_index":108,
+       "description":"The Norwegian Elkhound is a resilient and energetic breed known for its thick, weather-resistant coat and spirited nature. With an average lifespan of 12-15 years, this medium-sized working dog has a strong hunting instinct and excels in cold climates. Intelligent and independent, the Norwegian Elkhound is fiercely loyal and protective of its family. While it may be reserved towards strangers, it gets along well with other dogs and makes for a loyal and affectionate companion.",
+       "avatar":"avatars/norwegian_elkhound.png",
+       "normalizedName":"norwegian_elkhound"
+    },
+    {
+       "name":"Norwegian lundehund",
+       "training_index":109,
+       "description":"The Norwegian Lundehund, also known as the 'Puffin Dog', is a small and agile breed that was originally bred for hunting puffins. This unique and rare breed has six fully functioning toes on each foot, which enables them to navigate rocky terrains with ease. The average lifespan of a Lundehund is between 12-15 years. They are known for their independent and energetic personality, making them a great choice for active families who enjoy outdoor adventures. With their charming and adaptable nature, the Norwegian Lundehund makes for a delightful and loyal companion.",
+       "avatar":"avatars/norwegian_lundehund.png",
+       "normalizedName":"norwegian_lundehund"
+    },
+    {
+       "name":"Norwich terrier",
+       "training_index":110,
+       "description":"The Norwich Terrier is a small and spirited dog breed that is known for its intelligence and affectionate nature. They have a dense and wiry coat, with an average lifespan of around 12-15 years. Despite their small size, Norwich Terriers exude confidence and are known to be courageous and self-assured. They make great family pets as they love to be a part of all activities, but they can also be independent. With proper socialization, they can get along well with strangers and other dogs. Overall, the Norwich Terrier is a lively and loyal companion suitable for both urban and rural environments.",
+       "avatar":"avatars/norwich_terrier.png",
+       "normalizedName":"norwich_terrier"
+    },
+    {
+       "name":"Nova scotia duck tolling retriever",
+       "training_index":111,
+       "description":"The Nova Scotia Duck Tolling Retriever is a medium-sized breed known for its striking red coat and webbed feet, designated as a ‘retriever’ in breed type but also listed as a ‘gun dog’. With an average lifespan of 10-14 years, this breed is intelligent, energetic, and highly adaptable. They are known for their ability to attract ducks and lure them into shooting range with their playful and lively actions. They are loyal, affectionate, and thrive in active households that provide mental and physical stimulation. Additionally, their instinctive swimming abilities make them exceptional water retrievers.",
+       "avatar":"avatars/nova_scotia_duck_tolling_retriever.png",
+       "normalizedName":"nova_scotia_duck_tolling_retriever"
+    },
+    {
+       "name":"Old english sheepdog",
+       "training_index":112,
+       "description":"The Old English Sheepdog, also known as the 'Bobtail', is a large and affectionate dog breed with a distinctive shaggy coat that covers their entire body, including their face. This breed has an average lifespan of around 10-12 years. They have a gentle and friendly nature, being loyal and devoted to their family. Old English Sheepdogs are known for their intelligence and can be trained easily, but they also possess a stubborn streak. They enjoy being around people and are great with children, making them a wonderful family pet.",
+       "avatar":"avatars/old_english_sheepdog.png",
+       "normalizedName":"old_english_sheepdog"
+    },
+    {
+       "name":"Otterhound",
+       "training_index":113,
+       "description":"The Otterhound is a large and noble breed known for its shaggy, waterproof coat. It has a second title which is \"The Buccaneer of Dogdom\". This breed typically lives between 10-13 years. With a friendly and sociable nature, Otterhounds get along well with both humans and other pets. They possess a strong sense of smell and love exploring their surroundings. Fiercely loyal and courageous, Otterhounds make excellent companions for active families and are especially fond of the water. Their size and adaptable nature enable them to thrive in both urban and rural settings.",
+       "avatar":"avatars/otterhound.png",
+       "normalizedName":"otterhound"
+    },
+    {
+       "name":"Papillon",
+       "training_index":114,
+       "description":"The Papillon, also known as the 'Butterfly Dog', is a small and elegant breed with long, silky hair and distinctive butterfly-like ears. They have an average lifespan of 13-15 years. This charming breed is intelligent, friendly, and always eager to please. They are known for their exceptional trainability and make great obedience and agility dogs. Papillons get along well with children and other pets, and their small size makes them suitable for both city and country living. With their loving nature and joyful temperament, they provide endless love and companionship to their owners.",
+       "avatar":"avatars/papillon.png",
+       "normalizedName":"papillon"
+    },
+    {
+       "name":"Parson russell terrier",
+       "training_index":115,
+       "description":"The Parson Russell Terrier is a lively and energetic breed known for their intelligence and determination. They have a second title, commonly referred to as the Jack Russell Terrier. With an average lifespan of 13-15 years, they are highly adaptable and make excellent companions. They are independent thinkers and may exhibit stubbornness at times, but their affectionate and loving nature towards their family is unparalleled. Due to their high energy levels, they require ample physical and mental stimulation to maintain their well-being. It's important to note that their small size does not reflect their huge personalities.",
+       "avatar":"avatars/parson_russell_terrier.png",
+       "normalizedName":"parson_russell_terrier"
+    },
+    {
+       "name":"Pekingese",
+       "training_index":116,
+       "description":"The Pekingese is a toy breed known for its regal appearance and long, flowing coat. It has an average lifespan of 12-15 years. Despite its small size, the Pekingese is a dignified and confident dog, often expressing a sense of self-importance. While it is affectionate and loving towards its family, it can also be independent and stubborn at times. This breed is not overly active but does enjoy short walks and playtime. The Pekingese makes a fantastic companion for individuals or families living in both urban and rural environments.",
+       "avatar":"avatars/pekingese.png",
+       "normalizedName":"pekingese"
+    },
+    {
+       "name":"Pembroke welsh corgi",
+       "training_index":117,
+       "description":"The Pembroke Welsh Corgi is a charming and intelligent dog breed that exudes confidence. With an average lifespan of 12-15 years, this breed is known for its athleticism and agility. It is a highly active and energetic companion that requires regular exercise. Pembroke Welsh Corgis are affectionate, loyal, and good with children, making them great family pets. They have a bold personality and are quick learners, making them equally adaptable to both city and country life. Their distinctive appearance with short legs and a long body adds to their endearing charm.",
+       "avatar":"avatars/pembroke_welsh_corgi.png",
+       "normalizedName":"pembroke_welsh_corgi"
+    },
+    {
+       "name":"Petit basset griffon vendeen",
+       "training_index":118,
+       "description":"The Petit Basset Griffon Vendéen, also known as PBGV, is a small hunting breed with a shaggy coat and an average lifespan of 11-14 years. Full of energy and adventure, they are playful and known for their intelligence. PBGVs are loyal and affectionate towards their family, while also being highly independent. They have a keen sense of smell, making them great tracking dogs. It is important to give them regular exercise and mental stimulation to prevent boredom. With their compact size and adaptable nature, PBGVs can be a great choice for both rural and urban living.",
+       "avatar":"avatars/petit_basset_griffon_vendeen.png",
+       "normalizedName":"petit_basset_griffon_vendeen"
+    },
+    {
+       "name":"Pharaoh hound",
+       "training_index":119,
+       "description":"The Pharaoh Hound is an elegant and graceful breed with a sleek, short coat and distinctive, amber-colored eyes. They have a lifespan of about 11-14 years. Known for their hunting abilities, these dogs are highly intelligent and independent. They are loyal to their families but can be reserved with strangers. The Pharaoh Hound is an active and athletic breed that requires regular exercise to keep them happy and healthy. They are well-suited for families who enjoy outdoor activities and can provide them with mental stimulation.",
+       "avatar":"avatars/pharaoh_hound.png",
+       "normalizedName":"pharaoh_hound"
+    },
+    {
+       "name":"Plott",
+       "training_index":120,
+       "description":"The Plott is a powerful and athletic breed known for its hunting skills. They have a short, dense coat and typically live for about 10-14 years. Bred for tracking large game like wild boar, the Plott is strong-willed, intelligent, and independent. They are loyal and protective of their family, making them excellent watchdogs. While they can be somewhat reserved around strangers, they are generally good with children and other animals when properly socialized. With their endurance and determination, Plotts thrive in active households where they can get plenty of exercise and mental stimulation.",
+       "avatar":"avatars/plott.png",
+       "normalizedName":"plott"
+    },
+    {
+       "name":"Pointer",
+       "training_index":121,
+       "description":"The Pointer is a highly athletic and energetic breed, known for its exceptional hunting and tracking abilities. They have a strikingly elegant appearance and a short, dense coat that comes in a variety of colors. Pointers are intelligent and easy to train, making them excellent working and sporting dogs. On average, they have a lifespan of 10-15 years. With their friendly and gentle nature, Pointers get along well with both children and other pets. They thrive in an active home environment where they can enjoy ample exercise and mental stimulation.",
+       "avatar":"avatars/pointer.png",
+       "normalizedName":"pointer"
+    },
+    {
+       "name":"Pomeranian",
+       "training_index":122,
+       "description":"The Pomeranian is a small, lively breed known for its iconic fluffy coat. With an average lifespan of 12-16 years, they are loyal and affectionate towards their family. Despite their small size, they have a confident and bold personality, often seen barking as a way to express themselves. Pomeranians enjoy being the center of attention and are highly adaptable to various living environments, including urban areas. These charming dogs are eager to please and can make wonderful companions for both individuals and families.",
+       "avatar":"avatars/pomeranian.png",
+       "normalizedName":"pomeranian"
+    },
+    {
+       "name":"Poodle",
+       "training_index":123,
+       "description":"The Poodle is an elegant and intelligent breed known for its hypoallergenic, curly coat. With an average lifespan of 12-15 years, Poodles are highly adaptable and excel in various activities, including showmanship and obedience. They are loyal and affectionate towards their families, making them great companions. With their high intelligence and trainability, Poodles are often seen as highly disciplined and quick learners. Whether in a city apartment or a spacious home, the Poodle's loving nature and versatile character make it a remarkable pet for any setting.",
+       "avatar":"avatars/poodle.png",
+       "normalizedName":"poodle"
+    },
+    {
+       "name":"Portuguese water dog",
+       "training_index":124,
+       "description":"The Portuguese Water Dog, also known as the \"Cao de Água,\" is a medium-sized, intelligent breed known for its wavy, waterproof coat. With an average lifespan of 10-14 years, this energetic and friendly dog excels in various water-related activities due to its swimming abilities and webbed feet. Having a naturally obedient disposition, it thrives on being an essential member of the family and is highly trainable. Its enthusiastic and affectionate nature makes it a great choice for active families, but proper socialization is necessary to avoid any potential shyness with strangers.",
+       "avatar":"avatars/portuguese_water_dog.png",
+       "normalizedName":"portuguese_water_dog"
+    },
+    {
+       "name":"Saint bernard",
+       "training_index":125,
+       "description":"The Saint Bernard is a large and gentle breed known for its friendly and patient nature. These dogs typically have a lifespan of around 8-10 years. They are intelligent and easy to train, making them great family pets. With their thick coats and muscular build, they are well-suited to colder climates. These brave and loyal dogs are often used in search and rescue operations. Despite their size, they are good with children and get along well with other pets.",
+       "avatar":"avatars/saint_bernard.png",
+       "normalizedName":"saint_bernard"
+    },
+    {
+       "name":"Silky terrier",
+       "training_index":126,
+       "description":"The Silky Terrier, also known as the Australian Silky Terrier, is a small breed with a beautiful, silky coat that requires regular grooming to maintain its luscious appearance. With an average lifespan of 12-15 years, this loyal and loving dog is known for its lively and outgoing personality. Silky Terriers are intelligent and alert, making them great watchdogs. They are generally friendly with their families but can be reserved around strangers. Despite their small size, they are energetic and enjoy daily walks and playtime. Their adaptability makes them well-suited for both city and country living.",
+       "avatar":"avatars/silky_terrier.png",
+       "normalizedName":"silky_terrier"
+    },
+    {
+       "name":"Smooth fox terrier",
+       "training_index":127,
+       "description":"The Smooth Fox Terrier is a spirited and courageous breed with a short, smooth coat. They have an average lifespan of about 12-15 years. Known for their intelligence and energy, these dogs are full of vigor and love to explore. They are highly trainable but can be independent and stubborn at times. The Smooth Fox Terrier is loyal to their family and tends to get along well with children, although they can be wary of strangers. With their compact size and adaptable nature, they make great companions for both city and country lifestyles.",
+       "avatar":"avatars/smooth_fox_terrier.png",
+       "normalizedName":"smooth_fox_terrier"
+    },
+    {
+       "name":"Tibetan mastiff",
+       "training_index":128,
+       "description":"The Tibetan Mastiff, often referred to as 'The Lion Dog', is a majestic and imposing breed known for its thick, weather-resistant double coat and powerful build. They have an average lifespan of 10-14 years. Calm and independent, they are devoted and protective of their families. While gentle and affectionate, they can be wary of strangers and display territorial behavior. This large breed requires ample exercise and mental stimulation to thrive, making them best suited for experienced and active owners who can provide a secure and spacious environment.",
+       "avatar":"avatars/tibetan_mastiff.png",
+       "normalizedName":"tibetan_mastiff"
+    },
+    {
+       "name":"Welsh springer spaniel",
+       "training_index":129,
+       "description":"The Welsh Springer Spaniel is a medium-sized dog breed known for its vibrant red and white coat. They have an average lifespan of 12-15 years. With their friendly and gentle nature, they make excellent family pets. Welsh Springers are intelligent, sociable, and eager to please. They thrive on human companionship and have a natural ability for obedience training. This breed is highly active and requires regular exercise to stay happy and healthy. Welsh Springer Spaniels are known for their adaptability and can thrive in both urban and rural environments.",
+       "avatar":"avatars/welsh_springer_spaniel.png",
+       "normalizedName":"welsh_springer_spaniel"
+    },
+    {
+       "name":"Wirehaired pointing griffon",
+       "training_index":130,
+       "description":"The Wirehaired Pointing Griffon is a versatile and intelligent breed known for its extraordinary hunting skills and remarkable endurance. With an average lifespan of 12-14 years, these dogs are strong, well-muscled, and have a wiry and weather-resistant coat. Eager to please, they are loyal, gentle, and excellent with children. They possess a keen sense of smell and are adept at pointing and retrieving game. Alert and friendly, the Wirehaired Pointing Griffon makes for a perfect family dog or a dedicated hunting companion.",
+       "avatar":"avatars/wirehaired_pointing_griffon.png",
+       "normalizedName":"wirehaired_pointing_griffon"
+    },
+    {
+       "name":"Xoloitzcuintli",
+       "training_index":131,
+       "description":"The Xoloitzcuintli, also known as the Mexican Hairless dog, is a unique breed with a rich history. This ancient breed has no specific average lifespan, but often lives between 12-15 years. With their calm and affectionate nature, Xolos make loyal companions. They are known to be protective of their family, reserved with strangers, and may display territorial behaviors. These intelligent dogs appreciate mental stimulation and physical exercise. Xolos are also hypoallergenic due to their lack of hair, making them a great choice for individuals with allergies.",
+       "avatar":"avatars/xoloitzcuintli.png",
+       "normalizedName":"xoloitzcuintli"
+    },
+    {
+       "name":"Yorkshire terrier",
+       "training_index":132,
+       "description":"The Yorkshire Terrier is a small and feisty breed, commonly referred to as the \"Yorkie.\" With an average lifespan of 13-16 years, this adorable dog is known for its long, flowing silky coat. Despite their petite size, Yorkshire Terriers are fearless and confident, making them great watchdogs. They are intelligent and affectionate, forming strong bonds with their owners. However, their bold nature can sometimes lead to stubbornness. The Yorkshire Terrier thrives on love and attention and is well-suited for both city and suburban living.",
+       "avatar":"avatars/yorkshire_terrier.png",
+       "normalizedName":"yorkshire_terrier"
+    }
+ ]
