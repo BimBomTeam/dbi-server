@@ -40,8 +40,11 @@ namespace DBI.Application.Services
             return historyEntityDto;
         }
 
-        public async void DeleteSearchHistory(int id)
+        public async Task DeleteSearchHistory(int id)
         {
+            if (await historyQuery.GetByIdAsync(id) == null)
+                return;
+
             historyCommand.Delete(id);
             await historyCommand.SaveChangesAsync();
         }

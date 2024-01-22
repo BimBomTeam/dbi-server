@@ -30,7 +30,7 @@ namespace DBI.WebUI.Controllers
                 var result = await service.IdentifyAsync(dto.Base64);
                 _logger.LogInformation("Breed recognized " + DateTime.Now);
 
-                if (HttpContext.Request.Headers.TryGetValue("Authorization", out var authorizationHeader))
+                if (result.Id != -1 && HttpContext.Request.Headers.TryGetValue("Authorization", out var authorizationHeader))
                 {
                     if (!string.IsNullOrEmpty(authorizationHeader))
                     {
